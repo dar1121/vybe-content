@@ -1,0 +1,1262 @@
+$border-radius: 4px;
+
+// ------ FONTS ------ //
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+@font-face {
+  font-family: "DB Helvethaica X 84 BlkExtIt";
+  src: local("DB Helvethaica X 84 BlkExtIt"),
+  './fonts/DB Helvethaica X Blk Ext It v3.2.ttf';
+  }
+
+@font-face {
+  font-family: "DB Helvethaica X 43 LiExt";
+  src: local("DB Helvethaica X 43 LiExt"),
+  './fonts/DB Helvethaica X Li Ext v3.2.ttf';
+}
+
+
+
+// ------ COLORS ------- //
+
+$teal: #57C1B6;
+$burntyellow: #F1BA5D;
+$lightteal: #AAE0E1;
+$cherry: #EC5154;
+$white: #ffffff;
+$slate: #999999;
+$paper: #FCEFE0;
+$black: #000000;
+
+.teal {
+  color: $teal;
+}
+
+.burntyellow {
+  color: $burntyellow;
+}
+
+.lightteal {
+  color: $lightteal;
+}
+
+.cherry {
+  color: $cherry;
+}
+
+.white {
+  color: $white;
+}
+
+.slate {
+  color: $slate;
+}
+
+.paper {
+  color: $paper;
+}
+
+// ------- BODY ------ //
+body {
+    background: $teal;
+    cursor: default;
+    margin: none;
+    padding: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+html {
+  font-family: 'Montserrat', sans-serif; 
+}
+
+// ------- HEADER ------- //
+
+
+
+.explore {
+  padding-top: 64px;
+  background-image: url('./Explore-arrow.png');
+  background-position: center bottom;
+  height: 232px;
+  width: auto;
+  background-size: auto 120px;
+  background-repeat: no-repeat;
+}
+
+
+
+.hero-section{
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height:700px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
+  overflow:hidden;
+  background-color: $paper;
+}
+
+
+
+
+.header{
+  width: 100%;
+  margin: 0 auto;
+  z-index: 30;
+  
+  
+}
+
+.navbar {
+  width:96%;
+  padding-right: 2%;
+  padding-left: 2%;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s;
+  height: 72px;
+  z-index: 30;
+  box-shadow: 0 2px 6px #999999;
+  background-color: $teal;
+  background-image: url('/public/assets/images/Navbar-logo.png');
+  background-size: auto 70%;
+  background-position: 4% center;
+  background-repeat: no-repeat;
+}
+
+.navbar--hidden {
+  top: -80px;
+}
+
+
+.header ul {
+    list-style-type: none;
+    overflow: hidden;
+    
+    
+  }
+  
+ .header li {
+    color: $paper;
+
+    float: right;
+    display: block;
+    border-radius: 16px 16px 0 0 ;
+    width: 220px;
+    height:64px;
+    box-sizing: border-box;
+    
+    margin: 8px 0px 0px 2%;
+
+
+    line-height:70px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+
+    transition: 0.2s;
+
+
+  }
+
+  .header li:hover {
+      
+      color: $white;
+
+  }
+  .header li.selected {
+    
+    color: $white;
+    background-image: url(./whitetriangle.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    
+
+  }
+
+  .header li.selected:hover {
+   
+    color: $white;
+  }
+
+  .header li.languages {
+    border: 1px solid $paper;
+    background-color: $paper;
+    border-bottom: none;
+    color: $teal;
+    
+  }
+
+  .header li.languages:hover {
+    border: 1px solid $white;
+    background-color: $white;
+    border-bottom: none;
+    color: $teal;
+  }
+
+
+  .header li a {
+    color: inherit;
+    text-decoration:none;
+
+  }
+
+  .header img {
+    margin: 16px auto auto 32px;
+    
+    
+  }
+  
+  .hero-navbar {
+    width:96%;
+    padding-right: 2%;
+    padding-left: 2%;
+    position: absolute;
+    top: 0;
+    z-index:-10;
+
+    background-image: url('/public/assets/images/Navbar-logo.png');
+    background-size: auto 50px;
+    background-position: 4% 8px;
+    background-repeat: no-repeat;
+  }
+
+  .hero-navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  .hero-navbar li {
+      color: $white;
+  
+      float: right;
+      display: block;
+      
+      width: 220px;
+      height:64px;
+      margin: 0px 0px 0px 2%;
+  
+  
+      line-height:64px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 2.25px;
+      text-transform: uppercase;
+      background-color: $teal;
+      
+      border-radius: 0px 0px 16px 16px;
+      transition: 0.2s;
+  
+  
+    }
+
+.hero-navbar li.selected {
+    background-image: url(./whitetriangle.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    color: $white;
+
+}
+
+.hero-navbar li:hover {
+  padding-top:8px;
+}
+
+.hero-navbar li.languages  {
+  background-color: $cherry;
+  color: $white;
+}
+
+// ------- CONTAINER ------- //
+
+  .container {
+    background-color: none;  
+    height: 100%;
+    border-radius: 16px 16px 0 0;
+    margin-top: 80px !important;
+  }
+
+  .formcontainer {
+    background-color: $white;  
+    width:40%;
+    padding: 6%;
+    margin: 8% 24%;
+  }
+
+// ------- FOOTER ------- //
+
+.footer {
+  width: 88%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer-block {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 56px;  
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+}
+
+
+.footer-block a:hover {
+  border-bottom: 1px solid black;
+}
+.footer-one-line-p {
+  display: block;
+  font-family: 'Montserrat', sans-serif;    
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 56px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.footer-p {
+  display: block;
+  font-family: 'Montserrat', sans-serif;    
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top:16px;
+  padding-bottom: 16px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+
+.footer-logo {
+  width:5%;
+  height:auto;
+  text-align:right;
+
+}
+// ------- SECTIONS ------- //
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+}
+
+.hero-intro {
+  padding: 4% 2% 10% 2%;
+  width:96%;
+}
+
+
+
+
+.yellow-rect {
+  z-index: -15;
+  background-color: $lightteal;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 200px;
+  position: absolute;
+  top:-250px;
+  left: -300px;
+  animation: spin 60s infinite;
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+
+}
+
+.our-mission {
+  background-image: url('./Ourmission-bg.png');
+  background-color: $white;
+  width:96%;
+  padding: 10% 2%;
+  background-position: left center;
+  border-radius: 16px 16px 0 0;
+  
+}
+
+
+.our-core-values{
+  width: 100%;
+  height: 515vh;
+  background-color: $paper;
+  padding:  10% 0% 0% 0%;
+  background-image: url('./Core-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  
+}
+
+
+.left-core-values{
+  width: 50% !important;
+  height: 515vh;
+}
+
+
+
+.sticky {
+  position:sticky;
+
+}
+
+.firststicky {
+  padding-top:0vh;
+}
+
+.circle {
+  margin: 4vh auto;
+  height:60vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20vh;
+  background-color: $white;
+  border-radius: 30vh;
+  width: 60vh;
+}
+
+.spaceholder {
+  height:50vh;
+  
+}
+
+.circle-title {
+  position:relative;
+  top:26.5vh;
+  margin: 0 auto;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.circle-text {
+  position:relative;
+  padding: 1vh 6vh;
+  top: 26vh;
+  text-align: center;
+}
+
+
+.our-core-values-img {
+  width:100%;
+  height:auto;
+  display: block
+}
+
+.our-space {
+  background-image: url('./Ourspace-bg.png');
+  background-color: $white;
+  background-size: 70vw auto;
+  width:96%;
+  padding: 10% 2%;
+  background-position: right top;
+}
+
+.our-app {
+  padding: 10% 2%;
+  width:96%;
+  background-image: url('./Ourapp-bg.png');
+  background-size: 70vw auto;
+  background-position: left bottom;
+  background-color: $paper;
+}
+
+.our-app-img {
+  margin-top:-160px;
+}
+
+.app-download-container {
+  display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr; 
+  grid-template-rows: auto auto auto;
+    gap: 24px 24px; 
+    grid-template-areas: 
+    "our-app-headline our-app-headline our-app-headline our-app-headline . ."
+    "our-app-description our-app-description our-app-description our-app-description our-app-description ."
+    "app-download-button app-download-button app-download-button app-download-button app-download-qr app-download-qr"; 
+}
+
+.our-app-headline { grid-area: our-app-headline; }
+
+.our-app-description { grid-area: our-app-description; }
+
+.app-download-button { grid-area: app-download-button; }
+
+.app-download-qr { 
+  grid-area: app-download-qr; 
+  width: 96px;
+  height: auto}
+
+.our-languages {
+  padding: 10% 2%;
+  width:96%;
+  background-image: url('./Ourlanguages-bg.png');
+  background-size: auto 100vh;
+  background-position: right center;
+  background-color: $white;
+} 
+
+.course-card {
+  background: #FCEFE0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  height: auto;
+  width: 100%;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.english-card {
+  background-image: url('./Englishcard-bg.png');
+  background-size: 110% auto;
+  background-position: -4px -4px ;
+
+}
+
+.mandarin-card {
+  background-image: url('./Mandarincard-bg.png');
+  background-size: 110% auto;
+  background-position: -4px -4px ;
+
+  
+}
+
+.who-we-are1{
+  padding: 10% 2%;
+  width:96%;
+  background-image: url('./Whoweare1-bg.png');
+  background-size: auto 100vh;
+  background-position: right center;
+  background-color: $lightteal;
+}
+
+.our-story {
+  padding: 10% 2%;
+  width:96%;
+  background-image: url('./Whoweare2-bg.png');
+  background-size: 70vw auto;
+  background-position: left bottom;
+  background-color: $white;
+
+}
+
+.our-values {
+  width:96%;
+  padding: 10% 2%;
+  background-color: $lightteal;
+}
+  
+.our-values-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "value-1 value-1 value-2 value-2 value-3 value-3"
+      ". chosen-value chosen-value chosen-value chosen-value ."
+      ". chosen-value chosen-value chosen-value chosen-value .";
+  }
+  
+  .value-1 { grid-area: value-1; }
+  
+  .value-2 { grid-area: value-2; }
+  
+  .value-3 { grid-area: value-3; }
+  
+  .chosen-value { 
+    grid-area: chosen-value; 
+
+}
+  
+  .chosen {
+    font-weight: 600;
+    background-image: url(./Valueoption-bg.png);
+    background-position: center 32px;
+    background-repeat: no-repeat;
+    background-size: 6px;
+  }
+
+  .value-option {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+
+.open-positions-cta {
+  background-color: $teal;
+  padding: 118px;
+
+}
+
+.open-positions-circle {
+  border-radius: 320px;
+  height: 640px;
+  width: 640px;
+  background-color:$paper;
+  margin: 0 auto;
+
+}
+
+.op-question {
+  text-align: center;
+  position: relative;
+  top: 220px;
+
+}
+
+
+.op-p {
+  text-align: center;
+  position: relative;
+  top: 250px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.op-button {
+  position: relative;
+  top: 290px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.careers {
+  width:96%;
+  background-image: url('./Careers-bg.png');
+  background-size: 70vw auto;
+  background-position: right bottom;
+  background-color: $paper;
+  padding: 10% 2%;
+}
+
+
+.positions {
+  width:96%;
+  background-image: url('./Positions-bg.png');
+  background-size: 70vw auto;
+  background-position: left top;
+  background-color: $white;
+  padding: 10% 2%;
+}
+
+
+.positions-card {
+  padding: 118px 160px ;
+  background-color: $paper;
+
+}
+
+.learn-english {
+  width:96%;
+  background-image: url('./Learnenglish-bg.png');
+  background-size: auto 100vh;
+  background-position: right center;
+  background-color: $white;
+  padding: 10% 2%;
+  background-repeat: no-repeat;
+}
+
+
+.why-choose-vybe { 
+    width: 96%;
+    background-color: $paper;
+    padding: 10% 2%;
+
+}
+
+.burntyellow-background {
+  background: $burntyellow !important;
+
+}
+
+.why-choose-vybe-content {
+  padding: 64px;
+  background: $lightteal;
+  border-radius: 16px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto; 
+  gap: 0px 16px; 
+  grid-template-areas: 
+    "why-choose-vybe-left why-choose-vybe-right"; 
+}
+.why-choose-vybe-left { grid-area: why-choose-vybe-left; }
+.why-choose-vybe-right { grid-area: why-choose-vybe-right; }
+
+.curriculum {
+  width:96%;
+  background-image: url('./Curriculum-bg.png');
+  background-size: 70vw auto;
+  background-position: right top;
+  background-color: $white;
+  padding: 10% 2%;
+  background-repeat: no-repeat;
+}
+
+.lesson-divider {
+  width: 100%;
+  height: 1px;
+  background-color: $slate;
+}
+.divider-spacing {
+  height:1px;
+}
+
+.down-arrow {
+  margin: 0 auto;
+  width:2rem;
+  height:1.2rem;
+  background-image: url('./down-arrow.png') ;
+  background-size: 2rem 1rem;
+  background-position: center 0.2rem;
+  background-repeat: no-repeat;
+}
+
+.subscriptions {
+  width:96%;
+  background-color: $paper;
+  padding: 10% 2%;
+}
+.subscription-card {
+  background-color: $white;
+  padding: 24px;
+  width:80%;
+  margin-bottom: 16px !important;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px #999999;
+  
+}
+
+.selected-subscription-card {
+  background-color: $white;
+  padding: 2%;
+  width:96%;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px #999999;
+  border: 2px solid $burntyellow;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.subscription-card-top {
+  display: flex;
+}
+
+.left-card {
+  margin-left: 30%;
+}
+
+.center-card {
+  margin: -5px auto;
+  border: 5px solid $cherry;
+  box-shadow: 0px 4px 4px #999999;
+}
+.right-card {
+  margin-left:-10%;
+}
+
+.tier-image {
+  width: 20%;
+  height: 20%;
+  align-self: flex-start;
+}
+
+.selected-tier-image {
+  width: 10%;
+  height: 10%;
+  align-self: flex-start;
+}
+
+.tier-name {
+  margin-left: 16px;
+}
+
+.tier-divider {
+  width: 100%;
+  height: 1px;
+  background-color: $slate;
+  margin: 16px 0;
+}
+
+
+.faq-heading {
+  width:96%;
+  background-color: $lightteal;
+  padding: 13% 2%;
+}
+
+.faq-sections {
+  position:sticky;
+  top: 10%;
+}
+
+.faq-questions {
+  width:96%;
+  background-color: $white;
+  padding: 10% 2%;
+}
+
+.question {
+  padding: 24px 0px;
+  width:100%;
+  border-bottom: 1px solid $slate;
+  font-weight: 600;
+}
+
+
+.tos-heading {
+  width:96%;
+  background-color: $burntyellow;
+  padding: 13% 2%;
+}
+
+
+.tos-content {
+  width:96%;
+  background-color: $white;
+  padding: 10% 2%;
+}
+
+// ------- TYPE STYLES ------- //
+
+.floatright {
+  float:right;
+}
+.alignright {
+  text-align: right;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "DB Helvethaica X 43 LiExt";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height:72%;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  letter-spacing: 2px;
+}
+
+h2{
+  font-family: "DB Helvethaica X 84 BlkExtIt";
+  font-size: 64px;
+  line-height:64px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;  
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h4 {
+  font-family: "DB Helvethaica X 43 LiExt";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height:32px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h5{
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;  
+  text-transform: uppercase;
+  margin: 0px;
+  letter-spacing: .2em;
+
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;    
+  font-weight: normal;
+  font-size: 16px;
+  line-height:120%;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.our-mission-h1 {
+  margin-top: -72px;
+}
+.section-title{
+  display: inline-block;
+  height: 56px;
+  padding: 20px;
+  border-radius: 16px;
+  box-sizing: border-box; 
+  border: 1px solid $teal;
+  margin: 0 0 70px 70px;
+
+  color: $white;
+  background-color: $teal;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;  
+  text-transform: uppercase;
+
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+}
+
+.strong{
+  font-weight: 600;
+
+}
+
+.lesson-heading {
+  line-height: 2rem !important;
+}
+
+.lesson-description {
+  margin-top:0.2rem;
+  
+}
+
+.tier-price {
+  display:inline !important;
+  font-size: 40px;
+  line-height: 40px;
+  color: $black;
+}
+
+.form-divider {
+  width: 100%;
+  height: 1px;
+  background-color: $slate;
+  margin: 32px 0;
+}
+
+blockquote {
+  background-color: $paper;
+  padding: 32px;
+  border: 1px solid $slate;
+}
+// ------ LISTS ------ //
+
+ol {
+  margin:0 0 0 32px;
+}
+
+.subscription-card ul {
+  list-style-type: "✓";
+}
+
+.faq-sections ul {
+  list-style-type: "–";
+  font-family: "DB Helvethaica X 43 LiExt";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height:32px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  
+
+}
+li span {
+  padding-left: 16px;
+}
+
+ul .hidden {
+  visibility:hidden;
+  list-style: none;
+}
+
+.questions-list {
+  margin: 24px 0px 40px 0px;
+}
+
+
+
+// ------ FORMS & BUTTONS ------ //
+
+button {
+  display: block;
+  height: 96px;
+  padding: 0 32px;
+  border-radius: 16px;
+  box-sizing: border-box; 
+  border: 1px solid $cherry;
+
+  color: $paper;
+  background-color: $cherry;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;  
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  height: 96px;
+  padding: 32px;
+  border-radius: 16px;
+  box-sizing: border-box; 
+  border: 1px solid $cherry;
+
+  color: $paper;
+  background-color: $cherry;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;  
+  text-transform: uppercase;
+  text-align: center;
+  transition: border 0.3s ease-in-out;
+}
+
+
+
+input[type="button"]:hover, button:hover, .button:hover {
+  color:$paper;
+  border: 4px solid $paper;
+  transition: border 0.3s ease-in-out;
+  
+}
+
+
+input[type="button"], input[type="submit"] {
+  display: block;
+  height: 56px;
+  padding: 0 30px;
+  border-radius: $border-radius;
+  box-sizing: border-box; 
+  border: 1px solid $cherry;
+
+  color: $paper;
+  background-color: $cherry;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;  
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  color:$paper;
+}
+
+input[type="text"]:focus, input[type="text"]:active{
+  border: 1px solid $lightteal;
+}
+
+input[type="text"]{
+  display: block;
+  height: 56px;
+  padding: 2%;
+  border-radius: $border-radius;
+  box-sizing: border-box; 
+  border: 1px solid $slate;
+  margin: 0px 0px;
+  width:100%;
+
+  color: $black;
+  background-color: $white;
+
+  font-family: 'Montserrat', sans-serif;    
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+input[type="date"]{
+  display: block;
+  height: 56px;
+  padding: 2%;
+  border-radius: $border-radius;
+  box-sizing: border-box; 
+  border: 1px solid $slate;
+  margin: 0px 0px;
+  width:100%;
+
+  color: $black;
+  background-color: $white;
+
+  font-family: 'Montserrat', sans-serif;    
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 16px 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.underline-link{
+  font-weight:600;
+}
+
+.underline-link:hover{
+  font-weight:600;
+  border-bottom: 1px solid $black;
+}
+
+.positions h3{
+  margin-top: 16px;
+
+}
+
+.positions p {
+  margin-bottom: 16px;
+}
+.download-app {
+  width: 100%;
+  background-color: $cherry;
+  border: 1px solid $cherry;
+  text-transform: uppercase;
+}
+
+
+.language-button {
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 32px;
+  height:64px;
+  line-height: 64px;
+  padding: 0px !important;
+}
+
+.open-apply-button {
+  width: 40%;
+  text-transform: uppercase;
+  margin-top: 24px;
+  background-color: $burntyellow;
+  border: 1px solid $burntyellow;
+  height: 64px;
+
+}
+.why-choose-vybe-heading {
+  
+  margin-bottom: 32px;
+  border-bottom: 1px solid $black;
+  padding-bottom: 8px;
+}
+
+.tier-sub-button {
+  border: 1px solid $cherry;
+  height: 64px;
+  width: 100%;
+  background-color: $white;
+  color: $cherry;
+  text-transform: uppercase;
+
+}
+
+
+.tier-button {
+  height: 64px;
+  width: 100%;
+  text-transform: uppercase;
+
+}
+
+.tier-sub-button:hover {
+  color: $cherry;
+  border: 1px solid $cherry;
+}
+// ------ SPACING ------- //
+.extra-top-margin
+{
+  margin-top: 64px !important;
+}
+
+.small-bottom-margin {
+  margin-bottom: 16px;
+}
+
+.bottom-margin {
+  margin-bottom: 32px;
+}
+
+.extra-bottom-margin {
+  margin-bottom: 64px;
+}
+
+.vertical-margin {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.med-padding {
+  padding: 32px 0px; 
+}
+
+
+
+// ------ OTHER SCSS PAGES ------ //
+
+@import './normalize.scss';
+@import './skeleton.scss';
