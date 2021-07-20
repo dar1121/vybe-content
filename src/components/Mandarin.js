@@ -1,11 +1,12 @@
 import React from 'react';
+import CollapsibleCurriculum from './CollapsibleCurriculum';
 
 
 
 export default class Mandarin extends React.Component{
     render() {
         return <div class="container">
-        <div class="learn-english fixed-bg">
+        <div class="learn-mandarin fixed-bg">
             <div class="row">
                 <div class="one columns">&nbsp;</div>
                 <div class="six columns">
@@ -19,11 +20,11 @@ export default class Mandarin extends React.Component{
                 This is a blurb of what VyBE’s Mandarin program offers. I would keep this at two lines.                       <br/>
                 </p>
                 <ol class="strong">
-                    <li><span>What Vybe Offers</span></li>
-                    <li><span>What Vybe Offers</span></li>
-                    <li><span>What Vybe Offers</span></li>
+                    <li><span>Exciting Topics</span></li>
+                    <li><span>Edtech and Classrooms</span></li>
+                    <li><span>Active Teaching Style</span></li>
                 </ol>
-                <a href="/apply" class=" button uppercase language-button">Get Started</a>
+                <a href="/#apply" class=" button uppercase language-button">Get Started</a>
                 </div>
             </div>
             
@@ -31,47 +32,34 @@ export default class Mandarin extends React.Component{
         </div>
         
         <div class="why-choose-vybe">
-            <div class="row">
-                <div class="four columns">
-                    &nbsp;
-                </div>
-                <div class="four columns">
-                <h1 class="aligncenter uppercase why-choose-vybe-heading">Why Choose Vybe?</h1>
-                </div>
+        <div class="row">
+            <div class="four columns">
+                &nbsp;
             </div>
-            <div class="row">
-                <div class="one columns">&nbsp;</div>
-                <div class="ten columns">
-                    <div class="why-choose-vybe-content">
-                        <div class="why-choose-vybe-left"></div>
-                        <div class="why-choose-vybe-right">
-                            <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                        
-                        </div>
-                    </div>
+            <div class="four columns">
+            <h1 class="aligncenter uppercase why-choose-vybe-heading">Why Choose Vybe?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one columns">&nbsp;</div>
+            <div class="ten columns">
+                <div class="why-choose-vybe-content">
+                    <div class="why-choose-vybe-left">&nbsp;</div>
+                    <div class="why-choose-vybe-right">We teach language through exciting, theme-based classes on relevant topics that appeal to Gen Z – ranging from internet phenomenons to getting drinks at a bar.</div>
+                </div>
 
-                    <div class="burntyellow-background why-choose-vybe-content vertical-margin">
-                        <div class="why-choose-vybe-left">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                        </div>
-                        <div class="why-choose-vybe-right"></div>
-                    </div>
+                <div class="burntyellow-background why-choose-vybe-content vertical-margin">
+                    <div class="why-choose-vybe-left">&nbsp;</div>
+                    <div class="why-choose-vybe-right">We combine edtech with classroom learning. Students get the best of both worlds.</div>
+                </div>
 
-                    <div class="why-choose-vybe-content">
-                        <div class="why-choose-vybe-left"></div>
-                        <div class="why-choose-vybe-right">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                        </div>
-                    </div>
+                <div class="why-choose-vybe-content">
+                    <div class="why-choose-vybe-left">&nbsp;</div>
+                    <div class="why-choose-vybe-right">Our teaching style is active not passive. We emphasize building confidence in speech, interacting with others. We focus less on grammar, syntax.</div>
                 </div>
             </div>
         </div>
+    </div>
 
         <div class="curriculum fixed-bg">
             <div class="row">
@@ -85,25 +73,19 @@ export default class Mandarin extends React.Component{
                    
                 <div class="one columns">&nbsp;</div>
                 <div class="four columns">
-                    <img class="bottom-margin u-max-full-width" src="/assets/images/Curriculum-img1.png"></img>
+                    <img class="bottom-margin u-max-full-width" src="/assets/images/Curriculum-img2.png"></img>
                 </div>
             </div>
         
-            <div class="row med-padding">
-                <div class="two columns">&nbsp;</div>
-                <div class="one columns">
-                    <h1>01</h1>
-                </div>
-                <div class="three columns">
-                    <h5 class="lesson-heading">The First Lesson</h5>
-                </div>
-                <div class="three columns">
-                    <p class="lesson-description">A phrase about your first lesson. I would keep this at one or two lines.</p>
-                </div>
-                <div class="one column">
-                <div class="down-arrow"></div>
+            <CollapsibleCurriculum number="01" title="The First Lesson" description ="A description about your lesson.">
+            <div class="row">
+                <div class="six columns">&nbsp;</div>
+                <div class="three columns bottom-margin">
+                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
                 </div>
             </div>
+            </CollapsibleCurriculum>
+
             <div class="row">
                 <div class="divider-spacing two columns">&nbsp;</div>
                 <div class="eight columns">
@@ -111,21 +93,15 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <div class="row med-padding">
-                <div class="two columns">&nbsp;</div>
-                <div class="one columns">
-                    <h1>02</h1>
+            <CollapsibleCurriculum number="02" title="The Second Lesson" description ="A description about your lesson.">
+            <div class="row">
+                <div class="six columns">&nbsp;</div>
+                <div class="three columns bottom-margin">
+                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
                 </div>
-                <div class="three columns">
-                    <h5 class="lesson-heading">The Second Lesson</h5>
-                </div>
-                <div class="three columns">
-                    <p class="lesson-description">A one line description.</p>
-                </div>
-                <div class="one column">
-                <div class="u-max-full-width down-arrow"></div>
-                </div>
-                </div>
+            </div>
+            </CollapsibleCurriculum>
+
             <div class="row">
                 <div class="divider-spacing two columns">&nbsp;</div>
                 <div class="eight columns">
@@ -133,21 +109,14 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <div class="row med-padding">
-                <div class="two columns">&nbsp;</div>
-                <div class="one columns">
-                    <h1>03</h1>
-                </div>
-                <div class="three columns">
-                    <h5 class="lesson-heading">The Third Lesson</h5>
-                </div>
-                <div class="three columns">
-                    <p class="lesson-description">A phrase about your third lesson. I would keep this at one or two lines.</p>
-                </div>
-                <div class="one column">
-                <div class="u-max-full-width down-arrow"></div>
+            <CollapsibleCurriculum number="03" title="The Third Lesson" description ="A description about your lesson.">
+            <div class="row">
+                <div class="six columns">&nbsp;</div>
+                <div class="three columns bottom-margin">
+                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
                 </div>
             </div>
+            </CollapsibleCurriculum>
             <div class="row">
                 <div class="divider-spacing two columns">&nbsp;</div>
                 <div class="eight columns">
@@ -155,21 +124,15 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <div class="row med-padding">
-                <div class="two columns">&nbsp;</div>
-                <div class="one columns">
-                    <h1>04</h1>
-                </div>
-                <div class="three columns">
-                    <h5 class="lesson-heading">The Fourth Lesson</h5>
-                </div>
-                <div class="three columns">
-                    <p class="lesson-description">Allows for as many lessons as you want.</p>
-                </div>
-                <div class="one column">
-                <div class="u-max-full-width down-arrow"></div>
+            <CollapsibleCurriculum number="04" title="The Fourth Lesson" description ="A description about your lesson.">
+            <div class="row">
+                <div class="six columns">&nbsp;</div>
+                <div class="three columns bottom-margin">
+                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
                 </div>
             </div>
+            </CollapsibleCurriculum>
+
             <div class="row">
                 <div class="divider-spacing two columns">&nbsp;</div>
                 <div class="eight columns">
@@ -210,8 +173,8 @@ export default class Mandarin extends React.Component{
                                <li class="hidden">Hidden</li>
                             </ul>
                         </section>
-                        <button class="tier-sub-button">Get Started</button>
-                    </div>
+                        <a href="/#apply" class=" button uppercase tier-button">Get Started</a>
+                        </div>
                 </div>
             
                 <div class="four columns">
@@ -232,7 +195,7 @@ export default class Mandarin extends React.Component{
                         <li><span>This is the <strong>last</strong> Tier 2 feature.</span> </li>
                         </ul>
                     </section>
-                    <button class="tier-button">Get Started</button>
+                    <a href="/#apply" class=" button uppercase tier-button">Get Started</a>
                     </div>
                 </div>
             
@@ -255,8 +218,8 @@ export default class Mandarin extends React.Component{
                                 <li><span>This is the <strong>last</strong> Tier 3 feature.</span> </li>
                             </ul>
                         </section>
-                        <button class="tier-sub-button">Get Started</button>
-                    </div>
+                        <a href="/#apply" class=" button uppercase tier-button">Get Started</a>
+                        </div>
                 </div>
 
             

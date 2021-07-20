@@ -41,20 +41,20 @@ export default class Container extends React.Component{
                 
                 <div class="row ">
                     <div class="six columns offset-by-five">
-                        <h1 class="our-mission-h1"> Nostrud  ullamco laboris nisi ut aliquip duis aute irure dolor. Ullam corporis suscipit.</h1>
+                        <h1 class="our-mission-h1"> This is a statement about VYBE's mission. Keep at two lines.</h1>
                     </div>
                 </div>
                 <br/>
                 <div class="row">
                     <div class="three columns offset-by-five">
                         <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        This is a paragraph about the goals that you want to achieve, the type of environment you wants to sponsor and why it’s important for these goals to be achieved and these environments be fostered.
                         </p>
                     </div>
 
                     <div class="three columns">
                         <p>
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        If there is a longer mission statement, that can be included in a link below. 
                         </p>
                         <br/>
                         <a href=""><h3 class="lightteal">Read More</h3></a>
@@ -65,18 +65,17 @@ export default class Container extends React.Component{
             <div class="our-core-values fixed-bg">
                 <div class="section-title">Our Core Values</div>
                 <div class="our-core-values-content">
-                <div class="offset-by-three six columns left-core-values">
 
 
                    <div class="sticky firststicky">
-                        <div class="circle">
+                        <div class="circle firstcircle">
+                            
+                            <div class="circle-text">
                             <div class="circle-title">
                                 <h1 class="cherry">Innovation</h1>
                             </div>
-                            <div class="circle-text">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+                            Discover new ways to be excited about learning.                            </div>
                             </div>
-                        </div>
 
                         <div class="spaceholder">
                         </div>
@@ -84,12 +83,12 @@ export default class Container extends React.Component{
 
                    <div class="sticky">
                         <div class="circle">
+                            
+                            <div class="circle-text">
                             <div class="circle-title">
                                 <h1 class="cherry">Evolution</h1>
                             </div>
-                            <div class="circle-text">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                            </div>
+                            Grow to be globally aware and involved.                            </div>
                         </div>
                         <div class="spaceholder">
                         </div>
@@ -97,12 +96,12 @@ export default class Container extends React.Component{
 
                    <div class="sticky">
                         <div class="circle">
+                           
+                            <div class="circle-text">
                             <div class="circle-title">
                                 <h1 class="cherry">Community</h1>
                             </div>
-                            <div class="circle-text">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                            </div>
+                            Belong with a group of people that share what you love.                            </div>
                         </div>
                         <div class="spaceholder">
                         </div>
@@ -110,16 +109,15 @@ export default class Container extends React.Component{
 
                    <div class="sticky laststicky">
                         <div class="circle">
+                           
+                        <div class="circle-text">
                             <div class="circle-title">
                                 <h1 class="cherry">Passion</h1>
                             </div>
-                            <div class="circle-text">
-                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                            </div>
+                            Connect with your truest self and let it shine.                             </div>
                         </div>
                         <div class="spaceholder">
                         </div>
-                   </div>
 
                 </div>
 
@@ -143,7 +141,7 @@ export default class Container extends React.Component{
                         
                         <img class="u-max-full-width vertical-margin" src="/assets/images/Ourspace_img2.png"></img>
                      
-                        <p> <h5>Lorem Ipsum</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p> <h5>A BUILDING IS A COMMUNITY:</h5> VYBE is an exciting environment in the middle of the city, or nestled away in the suburbs. Whichever it is, include information about your location and why that contributes to encouraging communication inside. </p>
                     </div>
                 </div>
 
@@ -151,12 +149,12 @@ export default class Container extends React.Component{
                     <div class="one columns">&nbsp;</div>
                     <div class="five columns">
                         <img class="u-max-full-width vertical-margin" src="/assets/images/Ourspace_img3.png"></img>
-                        <p> <h5>Lorem Ipsum</h5> Lorem ipsum dolor sit amet, consectetur adipiscing quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p> <h5>A short caption</h5> about the expansive entrance that welcomes you into the world of VYBE.</p>
                     </div>
                     <div class="one columns">&nbsp;</div>
                     <div class="four columns">
                         <img class="u-max-full-width vertical-margin" src="/assets/images/Ourspace_img4.png"></img>
-                        <p> <h5>Lorem Ipsum</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, ex ea commodo consequat.</p>
+                        <p> Another caption about encouraging communcation at VYBE.</p>
                     </div>                 
                 </div>
 
@@ -172,7 +170,7 @@ export default class Container extends React.Component{
 
                     <div class="six columns">
                         <img class="u-max-full-width bottom-margin" src="/assets/images/Ourspace_img6.png"></img>
-                        <p> <h5>Lorem Ipsum</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, ex ea commodo consequat.</p>
+                        <p> <h5>A longer caption:</h5> This caption should talk about how the environment allows for "living" and really getting familiar with the language than rather just learning phrases.</p>
                     </div>
                 </div>
                 
@@ -180,13 +178,13 @@ export default class Container extends React.Component{
                     <div class="one columns">&nbsp;</div>
                     <div class="six columns">
                         <img class="u-max-full-width bottom-margin extra-top-margin" src="/assets/images/Ourspace_img7.png"></img>
-                        <p> <h5>Lorem Ipsum</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, ex ea commodo consequat.</p>
+                        <p> Another caption about chilling at VYBE.</p>
                     </div>
                     <div class="one columns">&nbsp;</div>
                     <div class="three columns">
                     
                     <img class="u-max-full-width bottom-margin" src="/assets/images/Ourspace_img8.png"></img>
-                    <p> <h5>Lorem Ipsum</h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, ex ea commodo consequat.</p>
+                    <p> <h5>An ending caption:</h5> This statement could be about how you encourage play in the environment.  </p>
                     </div>
                     
                 </div>
@@ -200,12 +198,14 @@ export default class Container extends React.Component{
 
                 <div class="row extra-top-margin">
                     <div class="one columns">&nbsp;</div>
-                    <div class="app-download-container five columns">
+                    <div class="app-download-container six columns">
                         <div class="our-app-headline">
-                            <h1 class="uppercase">Lorem Ipsum Dolor Sit Amet</h1>
+                            <h1 class="uppercase">	Immerse yourself, anywhere, anytime. 
+                            </h1>
                         </div>
                         <div class="our-app-description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ex ea commodo consequat.</p>
+                            <p>	A description about the VYBE application, what it contains, and why that's important. 
+                            </p>
                         </div>
                         <div class="app-download-button">
                             <button class="download-app">Go To the App Store</button>
@@ -214,7 +214,6 @@ export default class Container extends React.Component{
                             <img class="u-max-full-width" src="assets/images/App-qr.png"></img>
                         </div>
                     </div>
-                    <div class="one columns">&nbsp;</div>
                     <div class="four columns our-app-img">
                         <img class="u-max-full-width" src="/assets/images/Ourapp-img1.png"></img>
                     </div>

@@ -143,7 +143,7 @@ html {
   }
   
  .header li {
-    color: $paper;
+    color: $white;
 
     float: right;
     display: block;
@@ -165,13 +165,14 @@ html {
     text-transform: uppercase;
 
     transition: 0.2s;
-
-
+    border: 1px solid $lightteal;
+    border-bottom: none;
   }
 
   .header li:hover {
-      
-      color: $white;
+    
+    height:68px;
+    margin: 4px 0px 0px 2%;
 
   }
   .header li.selected {
@@ -185,25 +186,16 @@ html {
 
   }
 
-  .header li.selected:hover {
-   
+
+
+  .header li.languages {
+    border: 1px solid $cherry;
+    background-color: $cherry;
+    border-bottom: none;
     color: $white;
   }
 
-  .header li.languages {
-    border: 1px solid $paper;
-    background-color: $paper;
-    border-bottom: none;
-    color: $teal;
-    
-  }
-
-  .header li.languages:hover {
-    border: 1px solid $white;
-    background-color: $white;
-    border-bottom: none;
-    color: $teal;
-  }
+ 
 
 
   .header li a {
@@ -226,6 +218,7 @@ html {
     top: 0;
     z-index:-10;
 
+    height: 72px; 
     background-image: url('/public/assets/images/Navbar-logo.png');
     background-size: auto 50px;
     background-position: 4% 8px;
@@ -260,7 +253,8 @@ html {
       
       border-radius: 0px 0px 16px 16px;
       transition: 0.2s;
-  
+      border: 1px solid $lightteal;
+      border-top: none;
   
     }
 
@@ -279,8 +273,85 @@ html {
 
 .hero-navbar li.languages  {
   background-color: $cherry;
+  border: 1px solid $cherry;
+  border-top: none;
   color: $white;
 }
+
+.responsive-navbar {
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 399;
+  display: none;
+  height:100%;
+  width:220px;
+  height:216px;
+  padding-top: 72px;
+}
+
+
+
+.icon {
+  display:none;
+  height:72px;
+  width:72px;
+  float:right;
+  top:0;
+  right:0;
+  z-index: 400;
+  background-image: url(./icon-bars-01.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+
+}
+
+.responsive-navbar ul li{
+  border-bottom: 1px solid $white;
+  border-radius: 0px;
+  background-color: $slate;
+}
+
+
+
+
+.responsive-navbar ul li:hover{
+  padding: 8px 0px;
+}
+
+.responsive-navbar ul li.selected{
+  background-image: url(./whitetriangle.png);
+  background-position:  center bottom;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .header ul  li {display: none;}
+  .header ul  li  a {display: none;}
+  
+  .hero-navbar ul  li {display: none;}
+  .hero-navbar ul  li  a {display: none;}
+  .icon {
+    display:block;
+    position:fixed;
+  }
+  .header {display:none;}
+  .hero-navbar {
+    position: fixed;
+    background-color: $teal;
+    box-shadow: 0 2px 6px #999999;
+    z-index:200;
+  }
+  .responsive-navbar {display:block;}
+
+  .responsive-navbar ul li {display:block;}
+  .responsive-navbar ul li a {display:block;}
+}
+
+
+
 
 // ------- CONTAINER ------- //
 
@@ -399,7 +470,7 @@ html {
 
 .our-core-values{
   width: 100%;
-  height: 515vh;
+  height: 410vw;
   background-color: $paper;
   padding:  10% 0% 0% 0%;
   background-image: url('./Core-bg.png');
@@ -408,13 +479,6 @@ html {
   background-repeat:no-repeat;
   
 }
-
-
-.left-core-values{
-  width: 50% !important;
-  height: 515vh;
-}
-
 
 
 .sticky {
@@ -427,34 +491,63 @@ html {
 }
 
 .circle {
-  margin: 4vh auto;
-  height:60vh;
+  margin: 1vw auto;
+  height:36vw;
   position: -webkit-sticky;
   position: sticky;
-  top: 20vh;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: $white;
-  border-radius: 30vh;
-  width: 60vh;
+  border-radius: 18vw;
+  width: 36vw;
+}
+
+.firstcircle {
+  margin: 12vw auto;
+
 }
 
 .spaceholder {
-  height:50vh;
+  height:60vw;
   
+}
+
+
+.circle-text {
+  position:relative;
+  padding: 0.5vw 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
 
 .circle-title {
   position:relative;
-  top:26.5vh;
   margin: 0 auto;
   text-align:center;
   text-transform: uppercase;
 }
 
-.circle-text {
-  position:relative;
-  padding: 1vh 6vh;
-  top: 26vh;
-  text-align: center;
+@media (max-width: 800px) {
+
+  .our-core-values{
+    height: 580vw;
+  }
+
+  .circle {
+    margin: 1vw auto;
+    height:72vw;
+    border-radius: 36vw;
+    width: 72vw;
+  }
+
+  .firstcircle {
+    margin: 24vw auto;
+  }
+
+  .circle-text {
+    padding: 1vw 6vw;
+  }
 }
 
 
@@ -485,6 +578,18 @@ html {
 .our-app-img {
   margin-top:-160px;
 }
+
+@media (max-width: 700px) {
+.our-app-img {
+  margin-top:0;
+}
+}
+
+@media (max-width: 400px) {
+  .our-app-img {
+    margin-top:180px;
+  }
+  }
 
 .app-download-container {
   display: grid; 
@@ -614,36 +719,24 @@ html {
 }
 
 .open-positions-circle {
-  border-radius: 320px;
-  height: 640px;
-  width: 640px;
+  border-radius: 35vw;
+  height: 70vw;
+  width: 70vw;
   background-color:$paper;
   margin: 0 auto;
 
 }
 
-.op-question {
+.open-positions-text {
+  position:relative;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
-  position: relative;
-  top: 220px;
-
-}
-
-
-.op-p {
-  text-align: center;
-  position: relative;
-  top: 250px;
-  width: 75%;
+  width: 72%;
   margin: 0 auto;
 }
 
-.op-button {
-  position: relative;
-  top: 290px;
-  margin: 0 auto;
-  width: 80%;
-}
+
 
 .careers {
   width:96%;
@@ -674,6 +767,16 @@ html {
 .learn-english {
   width:96%;
   background-image: url('./Learnenglish-bg.png');
+  background-size: auto 100vh;
+  background-position: right center;
+  background-color: $white;
+  padding: 10% 2%;
+  background-repeat: no-repeat;
+}
+
+.learn-mandarin {
+  width:96%;
+  background-image: url('./Learnmandarin-bg.png');
   background-size: auto 100vh;
   background-position: right center;
   background-color: $white;
@@ -780,6 +883,21 @@ html {
   margin-left:-10%;
 }
 
+
+@media (max-width: 550px) {
+  
+  .left-card {
+    margin-left: 0 auto;
+  }
+
+  .center-card {
+    margin: 0 auto;
+  }
+  .right-card {
+    margin-left:0 auto;
+  }
+}
+
 .tier-image {
   width: 20%;
   height: 20%;
@@ -826,6 +944,12 @@ html {
   width:100%;
   border-bottom: 1px solid $slate;
   font-weight: 600;
+}
+
+.answer {
+  padding: 24px 0px 0px 0px;
+  width:100%;
+  font-weight: 400;
 }
 
 
@@ -950,6 +1074,15 @@ p {
   z-index: 10;
 }
 
+
+@media (max-width: 550px) {
+  .section-title{
+    margin: 0 0 70px 20px;
+  }
+
+}
+
+
 .strong{
   font-weight: 600;
 
@@ -961,7 +1094,15 @@ p {
 
 .lesson-description {
   margin-top:0.2rem;
-  
+
+}
+
+
+
+.lesson-description-extended {
+  margin-top: 0.2rem;
+  display: none;
+  overflow: hidden;
 }
 
 .tier-price {

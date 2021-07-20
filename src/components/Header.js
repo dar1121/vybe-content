@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from "classnames";
-
+import ResponsiveNavbar from "./ResponsiveNavbar"
 
 
 export default class Header extends React.Component{
@@ -9,8 +9,11 @@ export default class Header extends React.Component{
     
         this.state = {
           prevScrollpos: window.pageYOffset,
-          visible: false
+          visible: false,
+          clicked: false
         };
+        this.responsiveNavbar = this.responsiveNavbar.bind(this);
+
       }
     
       // Adds an event listener when the component is mount.
@@ -22,6 +25,9 @@ export default class Header extends React.Component{
       componentWillUnmount() {
         window.removeEventListener("scroll", this.handleScroll);
       }
+
+      componentDidUpdate(){
+      }
     
       // Hide or show the menu.
       handleScroll = () => {
@@ -30,53 +36,39 @@ export default class Header extends React.Component{
         const currentScrollPos = window.pageYOffset;
         
         const visible = prevScrollpos > currentScrollPos && prevScrollpos > 100;
-        console.log(prevScrollpos, currentScrollPos, visible);
+        
         this.setState({
           prevScrollpos: currentScrollPos,
           visible
         });
       };
 
+      responsiveNavbar(){
+        this.setState(({ clicked }) => ({ clicked: !clicked }));
+
+        
+      }
+
+   
+
     render() {
         return <div>
-        <div class="hero-navbar">
-           <ul>
-           <li class="languages">
-             <a href="/#our-languages">Languages</a>
-           </li>
-
-           <li>
-             <a href="/about-us">Who We Are</a>
-           </li>
-
-           <li class="selected">
-             <a href="/">What We Do</a>
-           </li>
-           
-         </ul>
-           </div>
-        <div class="header">
-        <nav  className={classnames("navbar", {"navbar--hidden": !this.state.visible})}>
-
-      
-       
-          <ul>
-            <li class="languages">
-              <a href="/#our-languages">Languages</a>
-            </li>
-
-            <li>
-              <a href="/about-us">Who We Are</a>
-            </li>
-
-            <li class="selected">
-              <a href="/">What We Do</a>
-            </li>
+          <div class="hero-navbar">
+            {this.props.children}
+            <div class="icon" onClick={this.responsiveNavbar}></div>
+              {this.state.clicked ? <ResponsiveNavbar/> : null}
             
-          </ul>
+          </div>
+          <div class="header">
+            <nav  className={classnames("navbar", {"navbar--hidden": !this.state.visible})}>
+              {this.props.children}
+              
+            </nav>
+            
+          </div>
           
-      </nav>
-        </div>
         </div>
     }
 }
+
+

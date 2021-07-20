@@ -9,7 +9,7 @@ export default class Whoweare extends React.Component{
         <div class="row">
             <div class="one columns"> &nbsp; </div>
             <div class="six columns extra-top-margin">
-                <h1> Nostrud  ullamco laboris nisi ut aliquip duis aute irure dolor. Ullam corporis suscipit.</h1>
+                <h1> This is a statement about the group of people who brought the VYBE vision to life. </h1>
             </div>
         </div>
 
@@ -17,13 +17,13 @@ export default class Whoweare extends React.Component{
         <div class="one columns"> &nbsp; </div>
         <div class="three columns">
             <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            This paragraph should give a glimpse into what the people behind VYBE do and what drives them to do it.
             </p>
         </div>
 
         <div class="three columns">
             <p>
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            If there is a longer about me text, that can be included in a link below. 
             </p>
             <br/>
             <a href=""><h3>Read More</h3></a>
@@ -45,7 +45,7 @@ export default class Whoweare extends React.Component{
                 <div class="one columns"> &nbsp;</div>
                 <div class="five columns extra-top-margin">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                This is a story about how VYBE was founded. Try to craft this into a narrative and show, not tell why VYBE focuses on what they do.
                 </p>
                 <br/><br/>
                 <p>
@@ -74,14 +74,14 @@ export default class Whoweare extends React.Component{
                     <img class="u-max-full-width" src="/assets/images/Value_img1.png"></img>
                 </div>
                 <div class="six columns our-values-content">
-                    <div class="value-1 value-option chosen">Value</div>
-                    <div class="value-2 value-option">Value</div>
-                    <div class="value-3 value-option">Value</div>
+                    <div class="value-1 value-option chosen">Authenticity</div>
+                    <div class="value-2 value-option">Community</div>
+                    <div class="value-3 value-option">Integrity</div>
                     <div class="chosen-value">
                         <br/>
-                        <h1 class="uppercase">Sed ut perspiciatis</h1>
+                        <h1 class="uppercase">Be true to you.</h1>
                         <br/>
-                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                        <p>We prize people that are not afraid to be who they are. </p>
                     </div>
                 </div>
                 
@@ -92,11 +92,13 @@ export default class Whoweare extends React.Component{
         
         <div class="open-positions-cta">
             <div class="open-positions-circle">
-            
-                <h1 class="op-question teal uppercase">Does This Sound Like You?</h1>
-                <p class="op-p">We are currently looking for like-minded individuals to join the growing VyBE team.</p>
-                <a href="/careers" class="op-button button uppercase">See Our Open Positions</a>
-
+                <div class="open-positions-text">
+                    <h1 class="op-question teal uppercase">Does This Sound Like You?</h1>
+                    <br/>
+                    <p class="op-p">We are currently looking for like-minded individuals to join the growing VyBE team.</p>
+                    <br/>
+                    <a href="/careers" class="op-button button uppercase">See Our Open Positions</a>
+                </div>
             </div>
         
         </div>

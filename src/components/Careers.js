@@ -11,7 +11,7 @@ export default class Careers extends React.Component{
                 </div>
                 
                 <div class="four columns">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>At VYBE, we know that success begins at the personal level. That's why we strive to create a team that loves what they do and enjoys coming into work everyday.</p>
                     <br/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod tempor incididunt ut. </p>
                 </div>
@@ -32,14 +32,17 @@ export default class Careers extends React.Component{
                 <div class="one columns">&nbsp;</div>
                 <div class="four columns">
                     <h1 class="uppercase">About our Team</h1>
-                    <p class="extra-top-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="extra-top-margin">We are a group of diverse, multicultural people that are redefining the language learning process.</p>
                     <br/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod tempor incididunt ut. </p>
                     <h1 class="uppercase extra-top-margin">Benefits</h1>
-                    <p class="extra-top-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod tempor incididunt ut. </p>
-    
+                    <ul>
+                    <li><span>This is a list of the benefits of working at VYBE.</span></li>
+                    <li><span>Include working hours, holidays, equity options, expense accounts, training budgets etc.</span></li>
+                    <li><span>Highlight benefits exclusive to VYBE.</span></li>
+
+
+                    </ul>    
                 </div>
             </div>
         
