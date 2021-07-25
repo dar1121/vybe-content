@@ -24,7 +24,7 @@ import Tos from './components/Tos';
 
 import ApplicationForm from './components/Applicationform';
 
-
+ 
 
 console.log('app.js is running');
 

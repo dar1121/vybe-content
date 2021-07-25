@@ -4683,6 +4683,13 @@ react-dom@17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-font-loader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-font-loader/-/react-font-loader-2.0.0.tgz#3d17e8050ab3ff46ead1798344a4e881c9c41b29"
+  integrity sha512-EYIhz49HS9YLiYtPW12zdWVliUBMyTzCd97+okfZHOSu2RS2nLzLKhbp7DvJ8mr9LfqPG1d3RewP6HJyr/z6Qg==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"

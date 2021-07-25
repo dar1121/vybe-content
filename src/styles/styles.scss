@@ -6,14 +6,12 @@ $border-radius: 4px;
 
 @font-face {
   font-family: "DB Helvethaica X 84 BlkExtIt";
-  src: local("DB Helvethaica X 84 BlkExtIt"),
-  './DBHelvethaicaXBlkExtIt.ttf';
+  src: url('https://github.com/dar1121/vybe-content/blob/main/src/styles/DBHelvethaicaXBlkExtIt.ttf');
   }
 
 @font-face {
   font-family: "DB Helvethaica X 43 LiExt";
-  src: local("DB Helvethaica X 43 LiExt"),
-  './DBHelvethaicaXLiExt.ttf';
+  src: url('https://github.com/dar1121/vybe-content/blob/main/src/styles/DBHelvethaicaXLiExt.ttf');
 }
 
 
