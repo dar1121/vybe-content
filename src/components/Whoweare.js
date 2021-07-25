@@ -5,59 +5,63 @@ export default class Whoweare extends React.Component{
     constructor(props) {
         super(props);
         this.valueOne = this.valueOne.bind(this);
-        this.valueTwo = this.valueOne.bind(this);
-        this.valueTwo = this.valueOne.bind(this);
+        this.valueTwo = this.valueTwo.bind(this);
+        this.valueThree = this.valueThree.bind(this);
 
     }
     valueOne = () => {
-        chosenvalue = document.getElementsByClassName(chosen-value);
-        chosenvalue.innerHTML = 
-                        '<br/> <h1 class="uppercase">Value 1.</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
+       
+        let chosenvalue = document.getElementsByClassName('chosen-value');
+        chosenvalue[0].innerHTML = 
+                        '<br/> <h1 class="uppercase">Value 1</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
                         ;
-        firstvalue = document.getElementsByClassName(value1);
-        firstvalue.classList.add(chosen)
-        secondvalue = document.getElementsByClassName(value2);
-        if (secondvalue.classList.contains(chosen)) {
-            secondvalue.classList.remove(chosen)
+        let firstvalue = document.getElementsByClassName('value-1');
+        
+        firstvalue[0].classList.add('chosen');
+        let secondvalue = document.getElementsByClassName('value-2');
+        if (secondvalue[0].classList.contains('chosen')) {
+            secondvalue[0].classList.remove('chosen')
         }
-        thirdvalue = document.getElementsByClassName(value3);
-        if (thirdvalue.classList.contains(chosen)) {
-            thirdvalue.classList.remove(chosen)
+        let thirdvalue = document.getElementsByClassName('value-3');
+        if (thirdvalue[0].classList.contains('chosen')) {
+            thirdvalue[0].classList.remove('chosen')
         }
                    
        }
     valueTwo = () => {
-        chosenvalue = document.getElementsByClassName(chosen-value);
-        chosenvalue.innerHTML = 
-                        '<br/> <h1 class="uppercase">Value 2.</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
+        
+        let chosenvalue = document.getElementsByClassName('chosen-value');
+        chosenvalue[0].innerHTML = 
+                        '<br/> <h1 class="uppercase">Value 2</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
                         ;
                     
-        secondvalue = document.getElementsByClassName(value2);
-        secondvalue.classList.add(chosen)
-        firstvalue = document.getElementsByClassName(value1);
-        if (firstvalue.classList.contains(chosen)) {
-            firstvalue.classList.remove(chosen)
+        let secondvalue = document.getElementsByClassName('value-2');
+        secondvalue[0].classList.add('chosen')
+        let firstvalue = document.getElementsByClassName('value-1');
+        if (firstvalue[0].classList.contains('chosen')) {
+            firstvalue[0].classList.remove('chosen')
         }
-        thirdvalue = document.getElementsByClassName(value3);
-        if (thirdvalue.classList.contains(chosen)) {
-            thirdvalue.classList.remove(chosen)
+        let thirdvalue = document.getElementsByClassName('value-3');
+        if (thirdvalue[0].classList.contains('chosen')) {
+            thirdvalue[0].classList.remove('chosen')
         }
            
        }
     valueThree = () => {
-        chosenvalue = document.getElementsByClassName(chosen-value);
-        chosenvalue.innerHTML = 
-                        '<br/> <h1 class="uppercase">Value 3.</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
+        
+        let chosenvalue = document.getElementsByClassName('chosen-value');
+        chosenvalue[0].innerHTML = 
+                        '<br/> <h1 class="uppercase">Value 3</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
                         ;
-        thirdvalue = document.getElementsByClassName(value3);
-        thirdvalue.classList.add(chosen)
-        secondvalue = document.getElementsByClassName(value2);
-        if (secondvalue.classList.contains(chosen)) {
-            secondvalue.classList.remove(chosen)
+        let thirdvalue = document.getElementsByClassName('value3');
+        thirdvalue[0].classList.add('chosen')
+        let secondvalue = document.getElementsByClassName('value2');
+        if (secondvalue[0].classList.contains('chosen')) {
+            secondvalue[0].classList.remove('chosen')
         }
-        firstvalue = document.getElementsByClassName(value1);
-        if (firstvalue.classList.contains(chosen)) {
-            firstvalue.classList.remove(chosen)
+        let firstvalue = document.getElementsByClassName('value1');
+        if (firstvalue[0].classList.contains('chosen')) {
+            firstvalue[0].classList.remove('chosen')
         }
                        
        }
@@ -135,12 +139,12 @@ export default class Whoweare extends React.Component{
                     <img class="u-max-full-width" src="/assets/images/Value_img1.png"></img>
                 </div>
                 <div class="six columns our-values-content">
-                    <div class="value-1 value-option chosen" onclick={valueOne}>Authenticity</div>
-                    <div class="value-2 value-option" onclick={valueTwo}>Community</div>
-                    <div class="value-3 value-option" onclick={valueThree}>Integrity</div>
+                    <a class="value-1 value-option chosen" onClick={this.valueOne}>Authenticity</a>
+                    <a class="value-2 value-option" onClick={this.valueTwo}>Community</a>
+                    <a class="value-3 value-option" onClick={this.valueThree}>Integrity</a>
                     <div class="chosen-value">
                         <br/>
-                        <h1 class="uppercase">Be true to you.</h1>
+                        <h1 class="uppercase">Value 1</h1>
                         <br/>
                         <p>We prize people that are not afraid to be who they are. </p>
                     </div>
