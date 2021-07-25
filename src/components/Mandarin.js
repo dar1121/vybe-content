@@ -218,7 +218,7 @@ export default class Mandarin extends React.Component{
                                 <li><span>This is the <strong>last</strong> Tier 3 feature.</span> </li>
                             </ul>
                         </section>
-                        <a href="/#apply" class=" button uppercase tier-button">Get Started</a>
+                        <a href="/apply" class=" button uppercase tier-button">Get Started</a>
                         </div>
                 </div>
 

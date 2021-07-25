@@ -12,31 +12,31 @@ export default class Footer extends React.Component{
                 </div>
             
                 <div class="footer-block">
-                    <a href="/#about-us">Who We Are</a>
+                    <a href="/about-us">Who We Are</a>
                 </div>
 
                 <div class="footer-block">
-                    <a href="/#english">English Course</a>
+                    <a href="/english">English Course</a>
                 </div>
 
                 <div class="footer-block">
-                    <a href="/#mandarin">Mandarin Course</a>
+                    <a href="/mandarin">Mandarin Course</a>
                 </div>
             </div>
 
             <div class="three columns">
                 
             <div class="footer-block">
-                <a href="/#careers">Careers</a>
+                <a href="/careers">Careers</a>
             </div>
 
             <div class="footer-block">
-                <a href="/#faq">FAQ</a>
+                <a href="/faq">FAQ</a>
             </div>
 
 
             <div class="footer-block">
-                <a href="/#tos">Terms & Conditions</a>
+                <a href="/tos">Terms & Conditions</a>
             </div>
 
             

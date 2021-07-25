@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { HashLink } from 'react-router-hash-link';
 
@@ -34,7 +34,7 @@ const VybeIndex = () => (
             <Header>
                 <ul>
                     <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class="selected"><a href="/">What We Do</a></li>  
                 </ul>
                 
@@ -54,7 +54,7 @@ const EnglishCourse = () => (
             <Header>
                 <ul>
                     <li class="selected languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -69,7 +69,7 @@ const MandarinCourse = () => (
             <Header>
                 <ul>
                     <li class="selected languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -84,7 +84,7 @@ const AboutUs = () => (
             <Header>
                 <ul>
                     <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class="selected"><a href="/#about-us">Who We Are</a></li>
+                    <li class="selected"><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -99,7 +99,7 @@ const CareersPage = () => (
             <Header>
                 <ul>
                     <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -114,7 +114,7 @@ const FaQ = () => (
             <Header>
                 <ul>
                     <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -129,7 +129,7 @@ const OurLanguages = () => (
             <Header>
                 <ul>
                     <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -144,7 +144,7 @@ const Applicationform = () => (
             <Header>
                 <ul>
                     <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -159,7 +159,7 @@ const ToS = () => (
             <Header>
                 <ul>
                     <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/#about-us">Who We Are</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
                     <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
@@ -170,7 +170,7 @@ const ToS = () => (
 );
 
 const routes = (
-    <HashRouter>  
+    <Router>  
     <div>
         <Route path="/" component={VybeIndex} exact={true} />  
         <Route path="/our-languages" component={OurLanguages} exact={true} />
@@ -185,7 +185,7 @@ const routes = (
 
 
     </div>
-    </HashRouter>
+    </Router>
 )
 
 const appRoot = document.getElementById('app');
