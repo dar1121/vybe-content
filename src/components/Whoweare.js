@@ -1,6 +1,67 @@
 import React from 'react';
 
 export default class Whoweare extends React.Component{
+
+    constructor(props) {
+        super(props);
+        this.valueOne = this.valueOne.bind(this);
+        this.valueTwo = this.valueOne.bind(this);
+        this.valueTwo = this.valueOne.bind(this);
+
+    }
+    valueOne = () => {
+        chosenvalue = document.getElementsByClassName(chosen-value);
+        chosenvalue.innerHTML = 
+                        '<br/> <h1 class="uppercase">Value 1.</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
+                        ;
+        firstvalue = document.getElementsByClassName(value1);
+        firstvalue.classList.add(chosen)
+        secondvalue = document.getElementsByClassName(value2);
+        if (secondvalue.classList.contains(chosen)) {
+            secondvalue.classList.remove(chosen)
+        }
+        thirdvalue = document.getElementsByClassName(value3);
+        if (thirdvalue.classList.contains(chosen)) {
+            thirdvalue.classList.remove(chosen)
+        }
+                   
+       }
+    valueTwo = () => {
+        chosenvalue = document.getElementsByClassName(chosen-value);
+        chosenvalue.innerHTML = 
+                        '<br/> <h1 class="uppercase">Value 2.</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
+                        ;
+                    
+        secondvalue = document.getElementsByClassName(value2);
+        secondvalue.classList.add(chosen)
+        firstvalue = document.getElementsByClassName(value1);
+        if (firstvalue.classList.contains(chosen)) {
+            firstvalue.classList.remove(chosen)
+        }
+        thirdvalue = document.getElementsByClassName(value3);
+        if (thirdvalue.classList.contains(chosen)) {
+            thirdvalue.classList.remove(chosen)
+        }
+           
+       }
+    valueThree = () => {
+        chosenvalue = document.getElementsByClassName(chosen-value);
+        chosenvalue.innerHTML = 
+                        '<br/> <h1 class="uppercase">Value 3.</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
+                        ;
+        thirdvalue = document.getElementsByClassName(value3);
+        thirdvalue.classList.add(chosen)
+        secondvalue = document.getElementsByClassName(value2);
+        if (secondvalue.classList.contains(chosen)) {
+            secondvalue.classList.remove(chosen)
+        }
+        firstvalue = document.getElementsByClassName(value1);
+        if (firstvalue.classList.contains(chosen)) {
+            firstvalue.classList.remove(chosen)
+        }
+                       
+       }
+
     render() {
         return <div class="container">
         
@@ -74,9 +135,9 @@ export default class Whoweare extends React.Component{
                     <img class="u-max-full-width" src="/assets/images/Value_img1.png"></img>
                 </div>
                 <div class="six columns our-values-content">
-                    <div class="value-1 value-option chosen">Authenticity</div>
-                    <div class="value-2 value-option">Community</div>
-                    <div class="value-3 value-option">Integrity</div>
+                    <div class="value-1 value-option chosen" onclick={valueOne}>Authenticity</div>
+                    <div class="value-2 value-option" onclick={valueTwo}>Community</div>
+                    <div class="value-3 value-option" onclick={valueThree}>Integrity</div>
                     <div class="chosen-value">
                         <br/>
                         <h1 class="uppercase">Be true to you.</h1>
