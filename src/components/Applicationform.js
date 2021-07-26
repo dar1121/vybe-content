@@ -1,6 +1,8 @@
 import React from 'react';
 import { init } from 'emailjs-com';
 init("user_JjmLKCBJBxK1mSzjw7tMX");
+import EscapeOutside from "react-escape-outside"
+
 
 export default class Applicationform extends React.Component{
     constructor(props) {
@@ -10,14 +12,16 @@ export default class Applicationform extends React.Component{
           from_email: "",
           phone_number: "",
           chosen_tier: this.props.tier,
-          start_date: ""
+          start_date: "",
+          
         }
-        
     };
+
     componentDidMount() {
     console.log(this.props.tier);
     }
 
+    
     handleInputChange(event) {
         event.preventDefault();
         const target = event.target;
@@ -59,8 +63,7 @@ export default class Applicationform extends React.Component{
  
     render() {
         
-        return <div class="overlay">
-        <div class="formcontainer">
+        return  <div class="formcontainer">
            
            <h1 class="uppercase">Start Your Application</h1>
            <br/>
@@ -137,7 +140,7 @@ export default class Applicationform extends React.Component{
                 <input type="submit" value="Send Request" onClick={this.sendMessage.bind(this)} />
             </form>
         </div>
-        </div>
+       
     }
     
 }

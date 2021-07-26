@@ -3,6 +3,7 @@ import CollapsibleCurriculum from './CollapsibleCurriculum';
 import Applicationform from './Applicationform';
 import { init } from 'emailjs-com';
 init("user_JjmLKCBJBxK1mSzjw7tMX");
+import EscapeOutside from "react-escape-outside";
 
 
 export default class Mandarin extends React.Component{
@@ -12,11 +13,17 @@ export default class Mandarin extends React.Component{
         this.state = {
           apply : false,
           tiernumber : 0,
-          price: 0
+          price: 0,
+          isOpen: false
         };
         this.setTier = this.setTier.bind(this);
-
+        this.handleEscapeOutside = this.handleEscapeOutside.bind(this);
       };
+
+    handleEscapeOutside() {
+        this.setState({ apply: false });
+        console.log(this.state.isOpen);
+      }
       
       setTier(tiervalue, pricenumber) {
         this.setState(({ apply }) => ({ apply: !apply }));
@@ -247,7 +254,20 @@ export default class Mandarin extends React.Component{
             </div>
 
         </div>
-        {this.state.apply ? <Applicationform tier={this.state.tiernumber} price={this.state.price}/> : null}
+        {this.state.apply ? 
+            <div class="overlay">
+            <EscapeOutside 
+                onEscapeOutside={ this.handleEscapeOutside }
+                style={{
+                width:'40%',
+                margin: '8% 24%',
+                top:'0%',
+                }}>
+            <Applicationform 
+                tier={this.state.tiernumber} 
+                price={this.state.price}/>
+            </EscapeOutside> 
+            </div> : null}
         </div>
     }
 }

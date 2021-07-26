@@ -372,10 +372,11 @@ html {
   }
   .formcontainer {
     background-color: $white;  
-    width:40%;
-    padding: 6%;
-    margin: 8% 24%;
-    top:0%;
+    // width:40%;
+    // margin: 8% 24%;
+    // top:0%;
+    padding: 10%;
+    width:100%;
     z-index: 300;
     border: 16px solid $teal;
   
