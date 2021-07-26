@@ -360,11 +360,25 @@ html {
     margin-top: 80px !important;
   }
 
+  .overlay{
+    position : fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 299;
+  }
   .formcontainer {
     background-color: $white;  
     width:40%;
     padding: 6%;
     margin: 8% 24%;
+    top:0%;
+    z-index: 300;
+    border: 16px solid $teal;
+  
   }
 
 // ------- FOOTER ------- //

@@ -1,10 +1,27 @@
 import React from 'react';
 import CollapsibleCurriculum from './CollapsibleCurriculum';
+import Applicationform from './Applicationform';
 
 
 
 
-export default class English extends React.Component{
+export default class English extends React.Component{   constructor(props) {
+    super(props);
+    
+    this.state = {
+      apply : false,
+      tiernumber : 0,
+      price: 0
+    };
+    this.setTier = this.setTier.bind(this);
+
+  };
+  
+  setTier(tiervalue, pricenumber) {
+    this.setState(({ apply }) => ({ apply: !apply }));
+    this.setState({ tiernumber:tiervalue});
+    this.setState({ price:pricenumber});
+  }
     render() {
         return <div class="container">
         <div class="learn-english fixed-bg">
@@ -179,7 +196,7 @@ export default class English extends React.Component{
                                <li class="hidden">Hidden</li>
                             </ul>
                         </section>
-                        <button class="tier-sub-button">Get Started</button>
+                        <button class="uppercase tier-button" onClick={() => this.setTier(1, "12,345")} >Get Started</button>
                     </div>
                 </div>
             
@@ -201,7 +218,7 @@ export default class English extends React.Component{
                         <li><span>This is the <strong>last</strong> Tier 2 feature.</span> </li>
                         </ul>
                     </section>
-                    <button class="tier-button">Get Started</button>
+                    <button class="uppercase tier-button" onClick={() => this.setTier(2, "12,345")} >Get Started</button>
                     </div>
                 </div>
             
@@ -224,7 +241,7 @@ export default class English extends React.Component{
                                 <li><span>This is the <strong>last</strong> Tier 3 feature.</span> </li>
                             </ul>
                         </section>
-                        <button class="tier-sub-button">Get Started</button>
+                        <button class="uppercase tier-button" onClick={() => this.setTier(3, "12,345")} >Get Started</button>
                     </div>
                 </div>
 
@@ -232,7 +249,8 @@ export default class English extends React.Component{
             </div>
 
         </div>
-     
+        {this.state.apply ? <Applicationform tier={this.state.tiernumber} price={this.state.price}/> : null}
+
         </div>
 
     }

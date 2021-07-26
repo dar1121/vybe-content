@@ -3,12 +3,22 @@ import React from 'react';
 
 
 export default class Applicationform extends React.Component{
+    constructor(props) {
+        super(props);
+        
+    };
+    componentDidMount() {
+    console.log(this.props.tier);
+    }
+   
     render() {
-        return <div class="formcontainer">
+        
+        return <div class="overlay">
+        <div class="formcontainer">
            
            <h1 class="uppercase">Start Your Application</h1>
            <br/>
-           <p>Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.</p>
+           <p> Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.</p>
            <div class="form-divider"></div>
             <form>
                 <h5 class="teal">Contact Information</h5>
@@ -31,8 +41,8 @@ export default class Applicationform extends React.Component{
                     <div class="subscription-card-top">
                             <img class="selected-tier-image" src="/assets/images/Tier-img3.png"></img>
                             <section class="tier-name">
-                                <h5 class>TIER 1</h5>
-                                <p class="slate aligncenter">฿ <h2 class="tier-price">12,345</h2> / month</p>
+                                <h5 class>TIER {this.props.tier} </h5>
+                                <p class="slate aligncenter">฿ <h2 class="tier-price">{this.props.price}</h2> / month</p>
                             </section>
                     </div>  
                 </div>
@@ -45,5 +55,7 @@ export default class Applicationform extends React.Component{
                 <input type="submit" value="Send Request" />
             </form>
         </div>
+        </div>
     }
+    
 }

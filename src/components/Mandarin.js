@@ -1,10 +1,30 @@
 import React from 'react';
 import CollapsibleCurriculum from './CollapsibleCurriculum';
+import Applicationform from './Applicationform';
 
 
 
 export default class Mandarin extends React.Component{
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+          apply : false,
+          tiernumber : 0,
+          price: 0
+        };
+        this.setTier = this.setTier.bind(this);
+
+      };
+      
+      setTier(tiervalue, pricenumber) {
+        this.setState(({ apply }) => ({ apply: !apply }));
+        this.setState({ tiernumber:tiervalue});
+        this.setState({ price:pricenumber});
+      }
     render() {
+       
+
         return <div class="container">
         <div class="learn-mandarin fixed-bg">
             <div class="row">
@@ -173,7 +193,7 @@ export default class Mandarin extends React.Component{
                                <li class="hidden">Hidden</li>
                             </ul>
                         </section>
-                        <a href="/#apply" class=" button uppercase tier-button">Get Started</a>
+                        <button class="uppercase tier-button" onClick={() => this.setTier(1, "12,345")} >Get Started</button>
                         </div>
                 </div>
             
@@ -195,7 +215,7 @@ export default class Mandarin extends React.Component{
                         <li><span>This is the <strong>last</strong> Tier 2 feature.</span> </li>
                         </ul>
                     </section>
-                    <a href="/#apply" class=" button uppercase tier-button">Get Started</a>
+                    <button class="uppercase tier-button" onClick={() => this.setTier(2, "12,345")} >Get Started</button>
                     </div>
                 </div>
             
@@ -218,7 +238,7 @@ export default class Mandarin extends React.Component{
                                 <li><span>This is the <strong>last</strong> Tier 3 feature.</span> </li>
                             </ul>
                         </section>
-                        <a href="/apply" class=" button uppercase tier-button">Get Started</a>
+                        <button class="uppercase tier-button" onClick={() => this.setTier(3, "12,345")} >Get Started</button>
                         </div>
                 </div>
 
@@ -226,7 +246,7 @@ export default class Mandarin extends React.Component{
             </div>
 
         </div>
-        
+        {this.state.apply ? <Applicationform tier={this.state.tiernumber} price={this.state.price}/> : null}
         </div>
     }
 }

@@ -53,13 +53,13 @@ export default class Whoweare extends React.Component{
         chosenvalue[0].innerHTML = 
                         '<br/> <h1 class="uppercase">Value 3</h1> <br/> <p>We prize people that are not afraid to be who they are. </p>';
                         ;
-        let thirdvalue = document.getElementsByClassName('value3');
+        let thirdvalue = document.getElementsByClassName('value-3');
         thirdvalue[0].classList.add('chosen')
-        let secondvalue = document.getElementsByClassName('value2');
+        let secondvalue = document.getElementsByClassName('value-2');
         if (secondvalue[0].classList.contains('chosen')) {
             secondvalue[0].classList.remove('chosen')
         }
-        let firstvalue = document.getElementsByClassName('value1');
+        let firstvalue = document.getElementsByClassName('value-1');
         if (firstvalue[0].classList.contains('chosen')) {
             firstvalue[0].classList.remove('chosen')
         }
