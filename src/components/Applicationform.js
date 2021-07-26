@@ -1,7 +1,6 @@
 import React from 'react';
 import { init } from 'emailjs-com';
 init("user_JjmLKCBJBxK1mSzjw7tMX");
-import EscapeOutside from "react-escape-outside"
 
 
 export default class Applicationform extends React.Component{

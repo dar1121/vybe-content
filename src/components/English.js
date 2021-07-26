@@ -1,27 +1,34 @@
 import React from 'react';
 import CollapsibleCurriculum from './CollapsibleCurriculum';
 import Applicationform from './Applicationform';
+import { init } from 'emailjs-com';
+init("user_JjmLKCBJBxK1mSzjw7tMX");
+import EscapeOutside from "react-escape-outside";
 
+export default class English extends React.Component{   
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+          apply : false,
+          tiernumber : 0,
+          price: 0,
+          isOpen: false
+        };
+        this.setTier = this.setTier.bind(this);
+        this.handleEscapeOutside = this.handleEscapeOutside.bind(this);
+      };
 
-
-
-export default class English extends React.Component{   constructor(props) {
-    super(props);
-    
-    this.state = {
-      apply : false,
-      tiernumber : 0,
-      price: 0
-    };
-    this.setTier = this.setTier.bind(this);
-
-  };
-  
-  setTier(tiervalue, pricenumber) {
-    this.setState(({ apply }) => ({ apply: !apply }));
-    this.setState({ tiernumber:tiervalue});
-    this.setState({ price:pricenumber});
-  }
+    handleEscapeOutside() {
+        this.setState({ apply: false });
+        console.log(this.state.isOpen);
+      }
+      
+      setTier(tiervalue, pricenumber) {
+        this.setState(({ apply }) => ({ apply: !apply }));
+        this.setState({ tiernumber:tiervalue});
+        this.setState({ price:pricenumber});
+      }
     render() {
         return <div class="container">
         <div class="learn-english fixed-bg">
@@ -249,8 +256,20 @@ export default class English extends React.Component{   constructor(props) {
             </div>
 
         </div>
-        {this.state.apply ? <Applicationform tier={this.state.tiernumber} price={this.state.price}/> : null}
-
+        {this.state.apply ? 
+            <div class="overlay">
+            <EscapeOutside 
+                onEscapeOutside={ this.handleEscapeOutside }
+                style={{
+                width:'40%',
+                margin: '8% 24%',
+                top:'0%',
+                }}>
+            <Applicationform 
+                tier={this.state.tiernumber} 
+                price={this.state.price}/>
+            </EscapeOutside> 
+            </div> : null}
         </div>
 
     }
