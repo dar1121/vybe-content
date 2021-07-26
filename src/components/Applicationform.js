@@ -1,16 +1,62 @@
 import React from 'react';
-
-
+import { init } from 'emailjs-com';
+init("user_JjmLKCBJBxK1mSzjw7tMX");
 
 export default class Applicationform extends React.Component{
     constructor(props) {
         super(props);
+        this.state = {
+          from_name:"",
+          from_email: "",
+          phone_number: "",
+          chosen_tier: this.props.tier,
+          start_date: ""
+        }
         
     };
     componentDidMount() {
     console.log(this.props.tier);
     }
-   
+
+    handleInputChange(event) {
+        event.preventDefault();
+        const target = event.target;
+        const name = target.name;
+        const value = target.value;
+
+        this.setState({ [name]: value });
+        console.log(this.state)
+    }
+    
+    
+    sendMessage(event) {
+        event.preventDefault();
+
+    const templateParams = {
+        from_name: this.state.from_name,
+        from_email: this.state.from_email,
+        phone_number: this.state.phone_number,
+        chosen_tier: this.props.tier,
+        start_date: this.state.start_date
+        };
+    emailjs
+          .send('service_23tsbwg', 'template_jvqkibm', templateParams)
+          .then(
+            function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+             }, function(error) {
+                console.log('FAILED...', error);
+            }
+          );
+    this.setState({
+        from_name:"",
+        from_email: "",
+        phone_number: "",
+        chosen_tier: this.props.tier,
+        start_date: ""
+        });
+      }
+ 
     render() {
         
         return <div class="overlay">
@@ -23,14 +69,43 @@ export default class Applicationform extends React.Component{
             <form>
                 <h5 class="teal">Contact Information</h5>
                 <br/>
-                <label>Full Name: <span class="cherry">*</span></label>
-                <input type="text" placeholder="Jean Simmons"></input>
+                <label 
+                    for="from_name">Full Name: <span class="cherry">*</span></label>
+                <input 
+                    name="from_name" 
+                    id="from_name" 
+                    type="text" 
+                    onChange={this.handleInputChange.bind(this)}
+                    placeholder="Your Name"
+                    required
+                    value={this.state.name}></input>
+
                 <br/>
-                <label>Email: <span class="cherry">*</span></label>
-                <input type="text" placeholder="jsimmons44@vybe.co"></input>
+
+                <label 
+                    for="from_email">Email: <span class="cherry">*</span></label>
+                <input 
+                    name="from_email" 
+                    id="from_email" 
+                    type="text" 
+                    onChange={this.handleInputChange.bind(this)}
+                    placeholder="Your Email"
+                    required
+                    value={this.state.email}
+                    ></input>
+
                 <br/>
-                <label>Phone Number: <span class="cherry">*</span></label>
-                <input type="text" placeholder="546 573 5637"></input>
+
+                <label 
+                    for="phone_number">Phone Number: <span class="cherry">*</span></label>
+                <input 
+                    name="phone_number" 
+                    id="phone_number" 
+                    type="text" 
+                    onChange={this.handleInputChange.bind(this)}
+                    placeholder="Your ###"
+                    required
+                    value={this.state.number}></input>
 
                 <div class="form-divider"></div>
 
@@ -46,13 +121,20 @@ export default class Applicationform extends React.Component{
                             </section>
                     </div>  
                 </div>
-                <span class="floatright slate"><a href="#">Change Selection</a></span>
+
+            
                 <br/>
                 <br/>
-                <label>Desired Start Date: <span class="cherry">*</span></label>
-                <input type="date" ></input>
+                <label for="start_date">Desired Start Date: <span class="cherry">*</span></label>
+                <input 
+                    name="start_date" 
+                    onChange={this.handleInputChange.bind(this)} 
+                    required
+                    value={this.state.number}
+                    id="start_date" 
+                    type="date" ></input>
                 <br/>
-                <input type="submit" value="Send Request" />
+                <input type="submit" value="Send Request" onClick={this.sendMessage.bind(this)} />
             </form>
         </div>
         </div>

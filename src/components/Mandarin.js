@@ -1,7 +1,8 @@
 import React from 'react';
 import CollapsibleCurriculum from './CollapsibleCurriculum';
 import Applicationform from './Applicationform';
-
+import { init } from 'emailjs-com';
+init("user_JjmLKCBJBxK1mSzjw7tMX");
 
 
 export default class Mandarin extends React.Component{
