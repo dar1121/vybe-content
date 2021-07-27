@@ -64,9 +64,9 @@ export default class Applicationform extends React.Component{
         
         return  <div class="formcontainer">
            
-           <h1 class="uppercase">Start Your Application</h1>
+           <h1 class="uppercase">LET'S VYBE</h1>
            <br/>
-           <p> Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.</p>
+           <p>Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.</p>
            <div class="form-divider"></div>
             <form>
                 <h5 class="teal">Contact Information</h5>

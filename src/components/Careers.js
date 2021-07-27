@@ -11,10 +11,10 @@ export default class Careers extends React.Component{
                 </div>
                 
                 <div class="four columns">
-                    <p>At VYBE, we know that success begins at the personal level. That's why we strive to create a team that loves what they do and enjoys coming into work everyday.</p>
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod tempor incididunt ut. </p>
-                </div>
+                    <p>At vybe, we are committed to creating an open and progressive work environment that not only allows our students, but also our staff to thrive and reach their fullest potential. 
+                    </p>
+                    <p>We give each member of our team the space and room to shine, while also moving the collective group forward.</p>
+                    </div>
             </div>
             <div class="row extra-top-margin">
                 <div class="five columns">&nbsp;</div>
@@ -32,17 +32,10 @@ export default class Careers extends React.Component{
                 <div class="one columns">&nbsp;</div>
                 <div class="four columns">
                     <h1 class="uppercase">About our Team</h1>
-                    <p class="extra-top-margin">We are a group of diverse, multicultural people that are redefining the language learning process.</p>
+                    <p class="extra-top-margin">We are a family of diverse, forward-thinking, and multicultural people who share a passion for language education and human connection.</p>
                     <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod tempor incididunt ut. </p>
-                    <h1 class="uppercase extra-top-margin">Benefits</h1>
-                    <ul>
-                    <li><span>This is a list of the benefits of working at VYBE.</span></li>
-                    <li><span>Include working hours, holidays, equity options, expense accounts, training budgets etc.</span></li>
-                    <li><span>Highlight benefits exclusive to VYBE.</span></li>
-
-
-                    </ul>    
+                    <p>Our teachers come from all around the world –– each of them bringing their unique perspectives, personal flair, and stories to share.</p>
+                     
                 </div>
             </div>
         
@@ -62,7 +55,7 @@ export default class Careers extends React.Component{
                 <p class="uppercase">JULY 2021</p>
             </div>
             <div class="six columns">
-                <h1 class="uppercase">Name of Position</h1>
+                <h1 class="uppercase">Curriculum Developer</h1>
                 <h3>Bangkok, Thailand – Remote (Thailand only)</h3>
             </div>
         </div>
@@ -77,58 +70,6 @@ export default class Careers extends React.Component{
                 <h3>Bangkok, Thailand – Remote (Thailand only)</h3>
             </div>
         </div>
-
-        <div class="row vertical-margin">
-            <div class="three columns"> &nbsp; </div>
-            <div class="two columns">
-                <p class="uppercase">JULY 2021</p>
-            </div>
-            <div class="six columns">
-                <h1 class="uppercase">Name of Position</h1>
-                <h3>Bangkok, Thailand – Remote (Thailand only)</h3>
-            </div>
-        </div>
-
-        <div class="row extra-top-margin">
-            <div class="five columns"> &nbsp;</div>
-            <div class="five columns">
-                <h5>Category | Jobs</h5>
-            </div>
-        </div>
-
-        <div class="row n extra-top-margin vertical-margin">
-            <div class="three columns"> &nbsp; </div>
-            <div class="two columns">
-                <p class="uppercase">JULY 2021</p>
-            </div>
-            <div class="six columns">
-                <h1 class="uppercase">Name of Position</h1>
-                <h3>Bangkok, Thailand – Remote (Thailand only)</h3>
-            </div>
-        </div>
-
-        <div class="row vertical-margin">
-            <div class="three columns"> &nbsp; </div>
-            <div class="two columns">
-                <p class="uppercase">JULY 2021</p>
-            </div>
-            <div class="six columns">
-                <h1 class="uppercase">Name of Position</h1>
-                <h3>Bangkok, Thailand – Remote (Thailand only)</h3>
-            </div>
-        </div>
-
-        <div class="row vertical-margin">
-            <div class="three columns"> &nbsp; </div>
-            <div class="two columns">
-                <p class="uppercase">JULY 2021</p>
-            </div>
-            <div class="six columns">
-                <h1 class="uppercase">Name of Position</h1>
-                <h3>Bangkok, Thailand – Remote (Thailand only)</h3>
-            </div>
-        </div>
-
 
         <div class="row extra-top-margin">
             <div class="one columns"> &nbsp; </div>

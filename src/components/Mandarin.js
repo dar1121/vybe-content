@@ -38,21 +38,21 @@ export default class Mandarin extends React.Component{
             <div class="row">
                 <div class="one columns">&nbsp;</div>
                 <div class="six columns">
-                    <h1 class="uppercase">Learn Conversational Mandarin</h1>
+                    <h1 class="uppercase">LEARN CHINESE</h1>
                 </div>
                 </div>
                 <div class="row">
                 <div class="one columns">&nbsp;</div>
                 <div class="four columns">
                 <p class="vertical-margin">
-                This is a blurb of what VyBE’s Mandarin program offers. I would keep this at two lines.                       <br/>
+                Build your foundation in learning Chinese, or explore new topics with us at vybe!
                 </p>
                 <ol class="strong">
-                    <li><span>Exciting Topics</span></li>
-                    <li><span>Edtech and Classrooms</span></li>
-                    <li><span>Active Teaching Style</span></li>
+                    <li><span>Theme-based topics that change every month</span></li>
+                    <li><span>Edtech vocabulary and grammar learning</span></li>
+                    <li><span>Emphasis on spoken Chinese and communication in our classrooms                    </span></li>
                 </ol>
-                <a href="/#apply" class=" button uppercase language-button">Get Started</a>
+                <a href="/#apply" class=" button uppercase language-button">GET STARTED. TAKE A CHINESE PLACEMENT TEST NOW!</a>
                 </div>
             </div>
             
@@ -73,17 +73,20 @@ export default class Mandarin extends React.Component{
             <div class="ten columns">
                 <div class="why-choose-vybe-content">
                     <div class="why-choose-vybe-left">&nbsp;</div>
-                    <div class="why-choose-vybe-right">We teach language through exciting, theme-based classes on relevant topics that appeal to Gen Z – ranging from internet phenomenons to getting drinks at a bar.</div>
+                    <div class="why-choose-vybe-right">Learn Chinese through exciting, theme-based classes on relevant topics that appeal to Millenials and Gen Zs – ranging from internet phenomenons to getting drinks at a bar.
+                    </div>
                 </div>
 
                 <div class="burntyellow-background why-choose-vybe-content vertical-margin">
                     <div class="why-choose-vybe-left">&nbsp;</div>
-                    <div class="why-choose-vybe-right">We combine edtech with classroom learning. Students get the best of both worlds.</div>
+                    <div class="why-choose-vybe-right">No more fixed courses! Book classes according to your own interests and learn basic vocabulary and grammar before coming to class. We adopt EdTech so that students get the best of both worlds in learning a new language.
+                    </div>
                 </div>
 
                 <div class="why-choose-vybe-content">
                     <div class="why-choose-vybe-left">&nbsp;</div>
-                    <div class="why-choose-vybe-right">Our teaching style is active not passive. We emphasize building confidence in speech, interacting with others. We focus less on grammar, syntax.</div>
+                    <div class="why-choose-vybe-right">Our teaching style is active, not passive. We emphasize building confidence in speech and interacting with others through activities. Grammar and vocabulary is important, but not as important as being understood.
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,9 +97,10 @@ export default class Mandarin extends React.Component{
                 <div class="two columns">&nbsp;</div>
                 <div class="three columns">
                     
-                    <h1 class="uppercase">Curriculum</h1>
+                    <h1 class="uppercase">Types of Classes</h1>
                     <br/>
-                    <p>A phrase about your curriculum. I would keep this at one or two lines.</p>
+                    <p>Our Chinese curriculum is designed to accommodate each and every step of your language learning journey. 
+                    </p>
                     </div>
                    
                 <div class="one columns">&nbsp;</div>
@@ -105,11 +109,13 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
         
-            <CollapsibleCurriculum number="01" title="The First Lesson" description ="A description about your lesson.">
+            <CollapsibleCurriculum number="01" title="Foundational classes" description ="Designed for beginners to build basic communication skills.">
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
+                    <p> 
+                    Our Foundational classes revolve around teaching CEFR A1 and A2 grammar and vocabulary. Learn the basics and slowly build your confidence in speaking and using Chinese. If you ever feel like our foundational classes are too easy, simply take a placement test to be able to join our topical classes!
+                    </p>
                 </div>
             </div>
             </CollapsibleCurriculum>
@@ -121,11 +127,12 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <CollapsibleCurriculum number="02" title="The Second Lesson" description ="A description about your lesson.">
+            <CollapsibleCurriculum number="02" title="Topical classes" description ="Designed for intermediate learners to learn new and relevant topics.">
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
+                    <p>Our theme-based topical classes range from CEFR A2-B2 level. They are suitable for a wide range of intermediate learners who have already learned some basic grammar and vocabulary, and would like to further practice using Chinese across a variety of situations.
+                    </p>
                 </div>
             </div>
             </CollapsibleCurriculum>
@@ -137,11 +144,12 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <CollapsibleCurriculum number="03" title="The Third Lesson" description ="A description about your lesson.">
+            <CollapsibleCurriculum number="03" title="Conversational classes" description ="Designed for all learners who wish to practice speaking and expressing themselves.">
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
+                    <p>Our Conservational classes provide students with a safe space to think and practice speaking, mimicking the actual conversations we would have with friends in a foreign country. 
+                    </p>
                 </div>
             </div>
             </CollapsibleCurriculum>
@@ -152,11 +160,13 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <CollapsibleCurriculum number="04" title="The Fourth Lesson" description ="A description about your lesson.">
+            <CollapsibleCurriculum number="04" title="Activity classes" description ="Designed for all learners to bond through fun, miscellaneous activities
+            ">
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p> These descriptions expand to show more text. I suggest keeping the visible descriptions to a short one-liner and then having the bulk of the information in this paragraph. </p>
+                    <p>Our Activity classes consist of multimedia games and interactive events which provide a space for our students to connect and get to know one another. This provides an immersive experience and strengthens the vybe community spirit.
+                    </p>
                 </div>
             </div>
             </CollapsibleCurriculum>
@@ -178,7 +188,7 @@ export default class Mandarin extends React.Component{
                 <div class="six columns">
                     <h1 class="uppercase">Subscription Based Learning</h1>
                     <br/>
-                    <p class="extra-bottom-margin">Our plans fit your needs.</p>
+                    <p class="extra-bottom-margin">Our flexible plans cater to your learning needs.</p>
                 </div>
             </div>
             <div class="row">
