@@ -1,4 +1,89 @@
 {
-    "exploreHeader": "Frequently Asked Questions",
-    "hi":"hi"
-  }
+  "applicationFormHeader": "Let's Vybe!",
+  "applicationFormTagline": "Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.",
+  "applicationContactInformation": "Contact Information",
+  "applicationFullName": "Full Name",
+  "applicationEmail": "Email",
+  "applicationPhoneNumber": "Phone Number",
+  "applicationSubscriptionHeading": "Subscription",
+  "applicationSubscriptionTier": "TIER",
+  "applicationPerMonth": "/ month",
+  "applicationDesiredStartDate": "Desired Start Date",
+  "applicationSendRequest": "Send Request"
+
+
+  ,
+
+
+  "careersHeader": "Careers at VyBE",
+  "careersP1": "At vybe, we are committed to creating an open and progressive work environment that not only allows our students, but also our staff to thrive and reach their fullest potential.",
+  "careersP2": "We give each member of our team the space and room to shine, while also moving the collective group forward.",
+  "careersAboutHeading": "About our team",
+  "careersAboutP1": "We are a family of diverse, forward-thinking, and multicultural people who share a passion for language education and human connection.",
+  "careersAboutP2": "Our teachers come from all around the world –– each of them bringing their unique perspectives, personal flair, and stories to share.",
+  
+  "careersCategory1": "Education | Jobs",
+  
+  "position1Date": "July 2021",
+  "position1Title": "Curriculum Developer",
+  "position1Location": "Bangkok, Thailand – Remote (Thailand only)",
+
+  "careersHaventFound": "Haven't found your perfect role?",
+  "careersSendCV": "Send us your CV",
+  "careersApplyNow": "Apply Now"
+
+
+  ,
+
+
+
+  "containerHeroHeading": "To learn a new language, is to acquire a new soul.",
+  "containerHeroP1": "Through vybe, embark on your language learning journey with an emphasis on community-based learning and enhanced through technology.",
+  "containerHeroP2": "Our goal is to provide you with a space to grow confident in using foreign languages and build meaningful connections.",
+
+  "containerOurMission": "Our Mission",
+  "containerOurMissionHeading": "To empower Gen Zs and Millenials to be confident users of languages through immersion in a local context.",
+  "containerOurMissionP1": "We hope to achieve our mission by providing Thais with a fresh new approach and space to learn and practice using English and Chinese – the two most important languages of today and tomorrow.",
+  "containerOurMissionP2": "Ultimately, our vision is to define and curate a new way of learning foreign languages in order to enhance communication and interaction in a multicultural and multilingual world.",
+
+  "containerOurCoreValues": "Our Core Values",
+  "containerOurCoreValues1Heading": "Students First",
+  "containerOurCoreValues1P": "Helping students learn languages in a more productive, engaging, and interactive manner.",
+  "containerOurCoreValues2Heading": "Relevance",
+  "containerOurCoreValues2P":"Constantly evolving and updating our curriculum to ensure that our students learn language that is beyond textbook scenarios.",
+  "containerOurCoreValues3Heading": "Community",
+  "containerOurCoreValues3P":" Being with a group of people who share the same passion for language learning. ",
+  "containerOurCoreValues4Heading": "Adventure",
+  "containerOurCoreValues4P":"Learning a new language is difficult, but it should never be boring.",
+
+  "containerOurSpace":"Our Space",
+  "containerOurSpaceTagline1":"A SPACE TO",
+  "containerOurSpaceTagline1Em":"COMMUNICATE",
+  "containerOurSpaceCaption1H":"INCREASING TOUCH POINTS IN OUR COMMUNITY",
+  "containerOurSpaceCaption1":"VYBE is an exciting environment located at the heart of Bangkok. Through ground-up initiatives or teacher-organised events, our students will always have the opportunity to participate and interact with others.",
+  "containerOurSpaceCaption2": "Strike up a conversation with our teachers and language facilitators.",
+  "containerOurSpaceCaption3": "Inviting YOU to join the VYBE Community.",
+  "containerOurSpaceTagline2Em": "IMMERSE",
+  "containerOurSpaceTagline2": "WITH VYBE.",
+  "containerOurSpaceCaption4H": "Chat with new friends",
+  "containerOurSpaceCaption4":"Our conversational classes are not held in small, enclosed spaces, but within our wide common area. At vybe, you will surely feel as if you are walking into a “Starbucks” of another country.",
+  "containerOurSpaceCaption5": "Play games and participate in activities with your friends at vybe!",
+  "containerOurSpaceCaption6H": "The SPACE for learning languages",
+  "containerOurSpaceCaption6":"Transforming the “typical” language school with textbooks and exams to one of community and interaction.",
+
+  "containerOurApp": "Our App",
+  "containerOurAppHeading": "Book a class, anywhere, anytime.",
+  "containerOurAppP": "No textbook, no problem. We have an app for that. Our app takes away the pressure of strictly following a fixed curriculum, giving students the freedom to choose classes that appeal to them. This provides our students with the flexibility to design their own curriculum according to their goals and interests.",
+  "containerOurAppButton": "Download our app today! Book your first 3 classes for free!",
+
+  "containerOurLanguages": "Our Languages",
+  "containerOurLanguagesHeading": "Speak with Confidence, Purpose, and Flair",
+  "containerOurLanguagesP": "We currently offer two languages for students to learn at VYBE.",
+  "containerOurLanguagesEnglishH": "English",
+  "containerOurLanguagesEnglishP": "Learn English in a welcoming, fun environment. Choose topics that match your interest or pick up interview skills with us at vybe.",
+  "containerOurLanguagesChineseH": "Chinese",
+  "containerOurLanguagesChineseP": "Learn Chinese and Chinese culture with us at vybe! Start from the basics of 拼音 or learn how to order your favorite dimsum.",
+  "containerOurLanguagesJoinNow": "Join Now"
+ 
+
+}

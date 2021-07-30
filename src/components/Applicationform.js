@@ -1,6 +1,7 @@
 import React from 'react';
 import { init } from 'emailjs-com';
 init("user_JjmLKCBJBxK1mSzjw7tMX");
+import { Text, LanguageContext } from '../context/Language';
 
 
 export default class Applicationform extends React.Component{
@@ -64,15 +65,15 @@ export default class Applicationform extends React.Component{
         
         return  <div class="formcontainer">
            
-           <h1 class="uppercase">LET'S VYBE</h1>
+           <h1 class="uppercase"> <Text tid="applicationFormHeader" /> </h1>
            <br/>
-           <p>Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.</p>
+           <p><Text tid="applicationFormTagline" /></p>
            <div class="form-divider"></div>
             <form>
-                <h5 class="teal">Contact Information</h5>
+                <h5 class="teal"><Text tid="applicationContactInformation" /></h5>
                 <br/>
                 <label 
-                    for="from_name">Full Name: <span class="cherry">*</span></label>
+                    for="from_name"><Text tid="applicationFullName" />:<span class="cherry">*</span></label>
                 <input 
                     name="from_name" 
                     id="from_name" 
@@ -85,7 +86,7 @@ export default class Applicationform extends React.Component{
                 <br/>
 
                 <label 
-                    for="from_email">Email: <span class="cherry">*</span></label>
+                    for="from_email"><Text tid="applicationEmail" />:<span class="cherry">*</span></label>
                 <input 
                     name="from_email" 
                     id="from_email" 
@@ -99,7 +100,7 @@ export default class Applicationform extends React.Component{
                 <br/>
 
                 <label 
-                    for="phone_number">Phone Number: <span class="cherry">*</span></label>
+                    for="phone_number"><Text tid="applicationPhoneNumber" />: <span class="cherry">*</span></label>
                 <input 
                     name="phone_number" 
                     id="phone_number" 
@@ -111,15 +112,15 @@ export default class Applicationform extends React.Component{
 
                 <div class="form-divider"></div>
 
-                <h5 class="teal">Subscription</h5>
+                <h5 class="teal"><Text tid="applicationSubscriptionHeading" /></h5>
                 <br/>
 
                 <div class="selected-subscription-card">
                     <div class="subscription-card-top">
                             <img class="selected-tier-image" src="/assets/images/Tier-img3.png"></img>
                             <section class="tier-name">
-                                <h5 class>TIER {this.props.tier} </h5>
-                                <p class="slate aligncenter">฿ <h2 class="tier-price">{this.props.price}</h2> / month</p>
+                                <h5 class><Text tid="applicationSubscriptionTier" /> {this.props.tier} </h5>
+                                <p class="slate aligncenter">฿ <h2 class="tier-price">{this.props.price}</h2><Text tid="applicationPerMonth" /></p>
                             </section>
                     </div>  
                 </div>
@@ -127,7 +128,7 @@ export default class Applicationform extends React.Component{
             
                 <br/>
                 <br/>
-                <label for="start_date">Desired Start Date: <span class="cherry">*</span></label>
+                <label for="start_date"><Text tid="applicationDesiredStartDate" />: <span class="cherry">*</span></label>
                 <input 
                     name="start_date" 
                     onChange={this.handleInputChange.bind(this)} 
@@ -136,7 +137,7 @@ export default class Applicationform extends React.Component{
                     id="start_date" 
                     type="date" ></input>
                 <br/>
-                <input type="submit" value="Send Request" onClick={this.sendMessage.bind(this)} />
+                <button type="submit" onClick={this.sendMessage.bind(this)} > <Text tid="applicationSendRequest"/> </button>
             </form>
         </div>
        
