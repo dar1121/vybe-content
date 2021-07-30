@@ -1,4 +1,6 @@
 import React from 'react';
+import LanguageSelector from './Languageselector'
+
 
 
 export default class Footer extends React.Component{
@@ -39,7 +41,9 @@ export default class Footer extends React.Component{
                 <a href="/tos">Terms & Conditions</a>
             </div>
 
-            
+            <div class="footer-block">
+                <LanguageSelector />
+            </div>
         
             </div>
 

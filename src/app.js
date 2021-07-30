@@ -17,7 +17,8 @@ import Careers from './components/Careers';
 import English from './components/English';
 import Mandarin from './components/Mandarin';
 
-
+import { LanguageProvider } from './context/Language';
+import LanguageSelector from './components/Languageselector'
 
 import Faq from './components/Faq';
 import Tos from './components/Tos';
@@ -170,6 +171,8 @@ const ToS = () => (
 );
 
 const routes = (
+    <LanguageProvider>
+
     <Router>  
     <div>
         <Route path="/" component={VybeIndex} exact={true} />  
@@ -186,6 +189,7 @@ const routes = (
 
     </div>
     </Router>
+    </LanguageProvider>
 )
 
 const appRoot = document.getElementById('app');

@@ -1,5 +1,6 @@
 import React from 'react';
 import CollapsibleQuestion from './CollapsibleQuestion';
+import { Text, LanguageContext } from '../context/Language';
 
 
 
@@ -30,7 +31,7 @@ export default class Faq extends React.Component{
                     </ul>
                 </div>
                 <div class="questions seven columns">
-                    <h1 class="uppercase">First Section Name</h1>
+                    <h1 class="uppercase"><Text tid="exploreHeader" /> </h1>
                     <div class="questions-list">
                     <CollapsibleQuestion question="What is your first question?">
                             Here is your answer. 
