@@ -9,7 +9,7 @@ export default class Careers extends React.Component {
                 <ul>
                     <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
                     <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-                    <li class=""><a href="/"><Text tid="naviwhatwedo" />o</a></li>  
+                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
                 </ul>
             </Header>
 			<div class="container">
