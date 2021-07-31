@@ -31,14 +31,6 @@ console.log('app.js is running');
 const VybeIndex = () => (
     <div>
             <Hero />
-            <Header>
-                <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class="selected"><a href="/">What We Do</a></li>  
-                </ul>
-                
-            </Header>
             <Container />
             <Footer />
             
