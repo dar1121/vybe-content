@@ -1,45 +1,8 @@
 {
-  "applicationFormHeader": "Let's Vybe!",
-  "applicationFormTagline": "Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.",
-  "applicationContactInformation": "Contact Information",
-  "applicationFullName": "Full Name",
-  "applicationEmail": "Email",
-  "applicationPhoneNumber": "Phone Number",
-  "applicationSubscriptionHeading": "Subscription",
-  "applicationSubscriptionTier": "TIER",
-  "applicationPerMonth": "/ month",
-  "applicationDesiredStartDate": "Desired Start Date",
-  "applicationSendRequest": "Send Request"
-
-
-  ,
-
-
-  "careersHeader": "Careers at VyBE",
-  "careersP1": "At vybe, we are committed to creating an open and progressive work environment that not only allows our students, but also our staff to thrive and reach their fullest potential.",
-  "careersP2": "We give each member of our team the space and room to shine, while also moving the collective group forward.",
-  "careersAboutHeading": "About our team",
-  "careersAboutP1": "We are a family of diverse, forward-thinking, and multicultural people who share a passion for language education and human connection.",
-  "careersAboutP2": "Our teachers come from all around the world –– each of them bringing their unique perspectives, personal flair, and stories to share.",
-  
-  "careersCategory1": "Education | Jobs",
-  
-  "position1Date": "July 2021",
-  "position1Title": "Curriculum Developer",
-  "position1Location": "Bangkok, Thailand – Remote (Thailand only)",
-
-  "careersHaventFound": "Haven't found your perfect role?",
-  "careersSendCV": "Send us your CV",
-  "careersApplyNow": "Apply Now"
-
-
-  ,
-
-
-
   "containerHeroHeading": "To learn a new language, is to acquire a new soul.",
   "containerHeroP1": "Through vybe, embark on your language learning journey with an emphasis on community-based learning and enhanced through technology.",
   "containerHeroP2": "Our goal is to provide you with a space to grow confident in using foreign languages and build meaningful connections.",
+  "containerHeroExplore": "EXPLORE",
 
   "containerOurMission": "Our Mission",
   "containerOurMissionHeading": "To empower Gen Zs and Millenials to be confident users of languages through immersion in a local context.",
@@ -84,6 +47,262 @@
   "containerOurLanguagesChineseH": "Chinese",
   "containerOurLanguagesChineseP": "Learn Chinese and Chinese culture with us at vybe! Start from the basics of 拼音 or learn how to order your favorite dimsum.",
   "containerOurLanguagesJoinNow": "Join Now"
- 
+
+
+
+  ,
+
+
+
+
+  "englishHeading": "Learn English",
+  "englishP": "Build your foundation in learning English, or explore new topics with us at vybe!",
+  "englishBullet1": "Theme-based topics that change every month",
+  "englishBullet2": "Edtech vocabulary and grammar learning",
+  "englishBullet3": "Emphasis on spoken English and communication in our classrooms",
+  "englishButton": "GET STARTED. TAKE AN ENGLISH PLACEMENT TEST NOW!",
+
+  "englishWhyChooseVybe": "Why Choose Vybe?",
+  "englishWhyChooseVybeP1": "Learn English through exciting, theme-based classes on relevant topics that appeal to Millenials and Gen Zs – ranging from internet phenomenons to getting drinks at a bar.",
+  "englishWhyChooseVybeP2": "No more fixed courses! Book classes according to your own interests and learn basic vocabulary and grammar before coming to class. We adopt EdTech so that students get the best of both worlds in learning a new language.",
+  "englishWhyChooseVybeP3": "Our teaching style is active, not passive. We emphasize building confidence in speech and interacting with others through activities. Grammar and vocabulary is important, but not as important as being understood.",
+
+  "englishTypesOfClasses": "Types of Classes",
+  "englishTypesOfClassesP": "Our English curriculum is designed to accommodate each and every step of your language learning journey. ",
+  
+  "englishCurriculum1Num": "01",
+  "englishCurriculum1Title":"Foundational Classes",
+  "englishCurriculum1Desc":"Designed for beginners to build basic communication skills.",
+  "englishCurruclum1MoreDesc":"Our Foundational classes revolve around teaching CEFR A1 and A2 grammar and vocabulary. Learn the basics and slowly build your confidence in speaking and using English. If you ever feel like our foundational classes are too easy, simply take a placement test to be able to join our topical classes!",
+
+  "englishCurriculum2Num": "02",
+  "englishCurriculum2Title":"Topical Classes",
+  "englishCurriculum2Desc":"Designed for intermediate learners to learn new and relevant topics",
+  "englishCurriculum2MoreDesc":"Our theme-based topical classes range from CEFr A2-B2 level. They are suitable for a wide range of intermediate learners who have already learned some basic grammar and vocabulary, and would like to further practice using English across a variety of situations.",
+
+  "englishCurriculum3Num": "03",
+  "englishCurriculum3Title":"Conversational Classes",
+  "englishCurriculum3Desc":"Designed for all learners who wish to practice speaking and expressing themselves",
+  "englishCurriculum3MoreDesc":"Our Conservational classes provide students with a safe space to think and practice speaking, mimicking the actual conversations we would have with friends in a foreign country.",
+
+  "englishCurriculum4Num": "04",
+  "englishCurriculum4Title":"Activity classes",
+  "englishCurriculum4Desc":"Designed for all learners to bond through fun, miscellaneous activities",
+  "englishCurriculum4MoreDesc":"Our Activity classes consist of multimedia games and interactive events which provide a space for our students to connect and get to know one another. This provides an immersive experience and strengthens the vybe community spirit. ",
+
+  "englishSubscriptionsHeading":"Subscription Based Learning",
+  "englishSubscriptionsP":"Our flexible plans cater to your learning needs.",
+  "englishSubscriptionsCTA":"Get Started",
+  "englishSubscriptionsPerMonth":" / month",
+
+  "englishTier1Heading":"Tier 1",
+  "englishTier1Price": "12,345",
+  "englishTier1Bullet1":"This is a Tier 1 feature.",
+  "englishTier1Bullet2":"This is another Tier 1 feature.",
+  "englishTier1Bullet3":"This is the last Tier 1 feature.",
+
+  "englishTier2Heading":"Tier 2",
+  "englishTier2Price": "12,345",
+  "englishTier2Bullet1":"This is a Tier 2 feature.",
+  "englishTier2Bullet2":"This is another Tier 2 feature.",
+  "englishTier2Bullet3":"This is the last Tier 2 feature.",
+  "englishTier2Bullet4":"This is the last Tier 2 feature.",
+
+  "englishTier3Heading":"Tier 3",
+  "englishTier3Price": "12,345",
+  "englishTier3Bullet1":"This is a Tier 3 feature.",
+  "englishTier3Bullet2":"This is another Tier 3 feature.",
+  "englishTier3Bullet3":"This is the last Tier 3 feature.",
+  "englishTier3Bullet4":"This is the last Tier 2 feature."
+
+
+
+  ,
+
+
+
+  
+
+  "aboutHeading":"VYBE arose from our desire to create a language learning experience that is both current and engaging.",
+  "aboutP1":"At vybe, many of our teachers have lived abroad and understand the difficulties and frustrations of learning a new language.",
+  "aboutP2":"Learning a language takes time and patience. It is often easy to give up learning a foreign language when studying starts to get boring and our lives start to get busy.",         
+  "aboutP3":"That is why we have curated and designed a curriculum that goes beyond what is covered in textbooks, bringing in topics that are most relevant and engaging in the lives of our students.",
+  "aboutOurStory":"Our Story",
+  "aboutOurStoryP1":"It all started with our own experience learning foreign languages. We spent 5 years learning Chinese through apps and attending classes, yet when we went to China, our minds blanked and we could only stutter and stammer as we spoke to the locals. We realized that more than 80% of what we learnt from textbooks and classes were inadequate. Despite the initial hiccup, we did not give up our passion for learning, and challenged ourselves by staying in Shanghai for 6 months. Through living, conversing and immersing ourselves with the local community, we gradually gained confidence and fluency in using Chinese.",
+  "aboutOurStoryP2":"Our language learning journey taught us that one of the most effective ways to master a new language is by using it in a foreign country. However, the act of immersion does not guarantee a smooth language learning journey. We still have to be proactive in reaching out and actively communicating with others in order to grow. During our stay in Shanghai, we met a British teacher who had lived in China for over 10 years, yet he could not speak a word of Chinese. Why? Because he never bothered to speak Chinese when shopping on Nanjing Road or dining at Xin Tian Di.",
+  "aboutOurStoryP3":"We then realized that language learning is not only about immersion, but more importantly, it is also about taking advantage of touch points to communicate in a foreign language. For this reason, we hope to disrupt the way that languages are traditionally taught by bringing the overseas immersion experience into the local context of Southeast Asia and providing students with opportunities to speak up.",
+  "aboutOurValues":"Our Values",
+  "aboutValue1":"Relevance",
+  "aboutValue1P":"We strive to constantly evolve and update our curriculum to ensure that our students learn topics that are beyond textbook scenarios.",
+  "aboutValue2":"Community",
+  "aboutValue2P":"",
+  "aboutValue3":"Adventure",
+  "aboutValue3P":"",
+  "aboutOPQ":"Do our mission and values resonate with you?",
+  "aboutOPP":"We are currently looking for like-minded individuals to join the growing vybe team.",
+  "aboutOPCTA":"See Our Open Positions"
+  
+  
+  
+  
+  ,
+  
+  
+  
+
+  
+  "chineseHeading": "LEARN CHINESE",
+  "chineseP": "Build your foundation in learning Chinese, or explore new topics with us at vybe!",
+  "chineseBullet1": "Theme-based topics that change every month",
+  "chineseBullet2": "Edtech vocabulary and grammar learning",
+  "chineseBullet3": "Emphasis on spoken Chinese and communication in our classrooms",
+  "chineseButton": "GET STARTED. TAKE A CHINESE PLACEMENT TEST NOW!",
+
+  "chineseWhyChooseVybe": "Why Choose Vybe?",
+  "chineseWhyChooseVybeP1": "Learn Chinese through exciting, theme-based classes on relevant topics that appeal to Millenials and Gen Zs – ranging from internet phenomenons to getting drinks at a bar.",
+  "chineseWhyChooseVybeP2": "No more fixed courses! Book classes according to your own interests and learn basic vocabulary and grammar before coming to class. We adopt EdTech so that students get the best of both worlds in learning a new language.",
+  "chineseWhyChooseVybeP3": "Our teaching style is active, not passive. We emphasize building confidence in speech and interacting with others through activities. Grammar and vocabulary is important, but not as important as being understood.",
+
+  "chineseTypesOfClasses": "Types of Classes",
+  "chineseTypesOfClassesP": "Our Chinese curriculum is designed to accommodate each and every step of your language learning journey.",
+  
+  "chineseCurriculum1Num": "01",
+  "chineseCurriculum1Title":"Foundational Classes",
+  "chineseCurriculum1Desc":"Designed for beginners to build basic communication skills.",
+  "chineseCurriculum1MoreDesc":"Our Foundational classes revolve around teaching CEFR A1 and A2 grammar and vocabulary. Learn the basics and slowly build your confidence in speaking and using Chinese. If you ever feel like our foundational classes are too easy, simply take a placement test to be able to join our topical classes!",
+
+  "chineseCurriculum2Num": "02",
+  "chineseCurriculum2Title":"Topical Classes",
+  "chineseCurriculum2Desc":"Designed for intermediate learners to learn new and relevant topics.",
+  "chineseCurriculum2MoreDesc":"Our theme-based topical classes range from CEFR A2-B2 level. They are suitable for a wide range of intermediate learners who have already learned some basic grammar and vocabulary, and would like to further practice using Chinese across a variety of situations.",
+
+  "chineseCurriculum3Num": "03",
+  "chineseCurriculum3Title":"Conversational classes",
+  "chineseCurriculum3Desc":"Designed for all learners who wish to practice speaking and expressing themselves.",
+  "chineseCurriculum3MoreDesc":"Our Conservational classes provide students with a safe space to think and practice speaking, mimicking the actual conversations we would have with friends in a foreign country.",
+
+  "chineseCurriculum4Num": "04",
+  "chineseCurriculum4Title":"Activity classes",
+  "chineseCurriculum4Desc":"Designed for all learners to bond through fun, miscellaneous activities",
+  "chineseCurriculum4MoreDesc":"Our Activity classes consist of multimedia games and interactive events which provide a space for our students to connect and get to know one another. This provides an immersive experience and strengthens the vybe community spirit.",
+
+  "chineseSubscriptionsHeading":"Subscription Based Learning",
+  "chineseSubscriptionsP":"Our flexible plans cater to your learning needs.",
+  "chineseSubscriptionsCTA":"Get Started",
+  "chineseSubscriptionsPerMonth":"/ month",
+
+  "chineseTier1Heading":"Tier 1",
+  "chineseTier1Price": "12,345",
+  "chineseTier1Bullet1":"This is a Tier 1 feature.",
+  "chineseTier1Bullet2":"This is another Tier 1 feature.",
+  "chineseTier1Bullet3":"This is the last Tier 1 feature.",
+
+  "chineseTier2Heading":"Tier 2",
+  "chineseTier2Price": "12,345",
+  "chineseTier2Bullet1":"This is a Tier 2 feature.",
+  "chineseTier2Bullet2":"This is another Tier 2 feature.",
+  "chineseTier2Bullet3":"This is the last Tier 2 feature.",
+  "chineseTier2Bullet4":"This is the last Tier 2 feature.",
+
+  "chineseTier3Heading":"Tier 3",
+  "chineseTier3Price": "12,345",
+  "chineseTier3Bullet1":"This is a Tier 3 feature.",
+  "chineseTier3Bullet2":"This is another Tier 3 feature.",
+  "chineseTier3Bullet3":"This is the last Tier 3 feature.",
+  "chineseTier3Bullet4":"This is the last Tier 3 feature."
+
+
+
+  ,
+
+
+
+
+  "applicationFormHeader": "Let's Vybe!",
+  "applicationFormTagline": "Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.",
+  "applicationContactInformation": "Contact Information",
+  "applicationFullName": "Full Name",
+  "applicationEmail": "Email",
+  "applicationPhoneNumber": "Phone Number",
+  "applicationSubscriptionHeading": "Subscription",
+  "applicationSubscriptionTier": "TIER",
+  "applicationPerMonth": "/ month",
+  "applicationDesiredStartDate": "Desired Start Date",
+  "applicationSendRequest": "Send Request"
+
+
+  ,
+
+
+  "careersHeader": "Careers at VyBE",
+  "careersP1": "At vybe, we are committed to creating an open and progressive work environment that not only allows our students, but also our staff to thrive and reach their fullest potential.",
+  "careersP2": "We give each member of our team the space and room to shine, while also moving the collective group forward.",
+  "careersAboutHeading": "About our team",
+  "careersAboutP1": "We are a family of diverse, forward-thinking, and multicultural people who share a passion for language education and human connection.",
+  "careersAboutP2": "Our teachers come from all around the world –– each of them bringing their unique perspectives, personal flair, and stories to share.",
+  
+  "careersCategory1": "Education | Jobs",
+  
+  "position1Date": "July 2021",
+  "position1Title": "Curriculum Developer",
+  "position1Location": "Bangkok, Thailand – Remote (Thailand only)",
+
+  "careersHaventFound": "Haven't found your perfect role?",
+  "careersSendCV": "Send us your CV",
+  "careersApplyNow": "Apply Now"
+  
+  
+  
+  ,
+  
+  
+  
+  "faqHeading":"Frequently Asked Questions",
+  "faqP": "If you have any further questions, please",
+  "faqContactUs":"contact us.",
+  "faqSection1":"Where",
+  "faqSection1Q1":"Where is Vybe located?",
+  "faqSection1A1":"Vybe’s physical center will be opening soon at Siamscape, a new edumall located just a 2-minute walk from the MBK Center. For now, given the current COVID-19 pandemic, we are operating virtually, offering online classes and activities for all levels.",
+  "faqSection2":"WHO",
+  "faqSection2Q1":"Who is the target market for Vybe?",
+  "faqSection2A1":"Our curriculum primarily caters to Gen Zs and Millennials from the ages of 16-35. However, we do not discriminate and also welcome students who are younger or older, from all walks of life. ",
+  "faqSection3":"WHEN",
+  "faqSection3Q1":"When are Vybe’s opening hours?",
+  "faqSection3A1":"Vybe is open from 10:00 am - 10:00 pm.",
+  "faqSection4":"WHAT",
+  "faqSection4Q1":"What materials do I need to prepare for class?",
+  "faqSection4A1":"All of the materials you need are found in our app. Each of our classes include optional grammar and vocabulary practice drills for students to review before class."
+  
+
+
+
+  ,
+
+
+
+  "tosHeading": "Terms of Service"
+
+
+  ,
+
+  "naviwhoweare":"Who We Are",
+  "naviwhatwedo":"What We Do",
+  "navilanguages":"Languages",
+  "navienglish":"English",
+  "navichinese":"Chinese",
+  "navicareers":"Careers",
+  "navifaq":"FAQ",
+  "navitos":"Terms of Service",
+  "phone":"Phone",
+  "phonecontent":"3059055150",
+  "address":"Address",
+  "addressline1":"Address 1",
+  "addressline2":"Address 2",
+  "addressline3":"Address 3",
+  "addressline4":"Address 4",
+  "addressline5":"Address 5",
+  "inquiries":"Inquiries",
+  "inquiriescontent":"youremailhere[2]vybe.com",
+  "followus":"Follow Us"
 
 }

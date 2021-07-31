@@ -33,6 +33,7 @@ export default class Container extends React.Component {
                     <div class="one-third column">&nbsp;</div>
                     <div class="one-third column explore aligncenter extra-top-margin">
                         <h4 class="black uppercase">
+                        <Text tid="containerHeroExplore" />
                         </h4>
 
                     </div>

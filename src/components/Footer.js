@@ -1,5 +1,6 @@
 import React from 'react';
 import LanguageSelector from './Languageselector'
+import { Text, LanguageContext } from '../context/Language';
 
 
 
@@ -10,35 +11,35 @@ export default class Footer extends React.Component{
             <div class="three columns">
 
                 <div class="footer-block">
-                    <a href="/">What We Do</a>
+                    <a href="/"><Text tid="naviwhatwedo" /></a>
                 </div>
             
                 <div class="footer-block">
-                    <a href="/about-us">Who We Are</a>
+                    <a href="/about-us"><Text tid="naviwhoweare" /></a>
                 </div>
 
                 <div class="footer-block">
-                    <a href="/english">English Course</a>
+                    <a href="/english"><Text tid="navienglish" /></a>
                 </div>
 
                 <div class="footer-block">
-                    <a href="/mandarin">Mandarin Course</a>
+                    <a href="/mandarin"><Text tid="navichinese" /></a>
                 </div>
             </div>
 
             <div class="three columns">
                 
             <div class="footer-block">
-                <a href="/careers">Careers</a>
+                <a href="/careers"><Text tid="navicareers" /></a>
             </div>
 
             <div class="footer-block">
-                <a href="/faq">FAQ</a>
+                <a href="/faq"><Text tid="navifaq" /></a>
             </div>
 
 
             <div class="footer-block">
-                <a href="/tos">Terms & Conditions</a>
+                <a href="/tos"><Text tid="navitos" /></a>
             </div>
 
             <div class="footer-block">
@@ -49,33 +50,34 @@ export default class Footer extends React.Component{
 
             <div class="three columns "> 
             <div class="footer-block">
-                Phone
+                <Text tid="phone" />
             </div>
 
-            <p class="footer-one-line-p"> +44 (444) 444 4444 </p>
+            <p class="footer-one-line-p"><Text tid="phonecontent" /></p>
             
             <div class="footer-block">
                 Address
             </div>
 
             <p class="footer-p">
-                23/6 Moo 8,<br/>
-                Soi Wattana,<br/>
-                Rachaprarop Road<br/>
-                Bangkapi<br/>
-                Bangkok 10800
+            <Text tid="addresline1" /><br/>
+            <Text tid="addresline2" /><br/>
+            <Text tid="addresline3" /><br/>
+            <Text tid="addresline4" /><br/>
+            <Text tid="addresline5" />
             </p>
             </div>
 
             <div class="three columns ">
             <div class="footer-block">
-                Inquiries
+            <Text tid="inquiries" />
             </div>
 
-            <p class="footer-one-line-p">hi@vybe.co </p>
+            <p class="footer-one-line-p">
+            <Text tid="inquiriescontent" /> </p>
             
             <div class="footer-block">
-                Follow Us
+            <Text tid="followus" />
             </div>
 
             <div class="footer-block">

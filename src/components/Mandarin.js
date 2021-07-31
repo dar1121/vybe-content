@@ -4,6 +4,7 @@ import Applicationform from './Applicationform';
 import { init } from 'emailjs-com';
 init("user_JjmLKCBJBxK1mSzjw7tMX");
 import EscapeOutside from "react-escape-outside";
+import { Text, LanguageContext } from '../context/Language';
 
 
 export default class Mandarin extends React.Component{
@@ -38,21 +39,21 @@ export default class Mandarin extends React.Component{
             <div class="row">
                 <div class="one columns">&nbsp;</div>
                 <div class="six columns">
-                    <h1 class="uppercase">LEARN CHINESE</h1>
+                    <h1 class="uppercase"><Text tid="chineseHeading" /></h1>
                 </div>
                 </div>
                 <div class="row">
                 <div class="one columns">&nbsp;</div>
                 <div class="four columns">
                 <p class="vertical-margin">
-                Build your foundation in learning Chinese, or explore new topics with us at vybe!
+                <Text tid="chineseP" />
                 </p>
                 <ol class="strong">
-                    <li><span>Theme-based topics that change every month</span></li>
-                    <li><span>Edtech vocabulary and grammar learning</span></li>
-                    <li><span>Emphasis on spoken Chinese and communication in our classrooms                    </span></li>
+                    <li><span><Text tid="chineseBullet1" /></span></li>
+                    <li><span><Text tid="chineseBullet2" /></span></li>
+                    <li><span><Text tid="chineseBullet3" /></span></li>
                 </ol>
-                <a href="/#apply" class=" button uppercase language-button">GET STARTED. TAKE A CHINESE PLACEMENT TEST NOW!</a>
+                <a href="/#apply" class=" button uppercase language-button"><Text tid="chineseButton" /></a>
                 </div>
             </div>
             
@@ -65,7 +66,7 @@ export default class Mandarin extends React.Component{
                 &nbsp;
             </div>
             <div class="four columns">
-            <h1 class="aligncenter uppercase why-choose-vybe-heading">Why Choose Vybe?</h1>
+            <h1 class="aligncenter uppercase why-choose-vybe-heading"><Text tid="chineseWhyChooseVybe" /></h1>
             </div>
         </div>
         <div class="row">
@@ -73,19 +74,19 @@ export default class Mandarin extends React.Component{
             <div class="ten columns">
                 <div class="why-choose-vybe-content">
                     <div class="why-choose-vybe-left">&nbsp;</div>
-                    <div class="why-choose-vybe-right">Learn Chinese through exciting, theme-based classes on relevant topics that appeal to Millenials and Gen Zs – ranging from internet phenomenons to getting drinks at a bar.
+                    <div class="why-choose-vybe-right"><Text tid="chineseWhyChooseVybeP1" />
                     </div>
                 </div>
 
                 <div class="burntyellow-background why-choose-vybe-content vertical-margin">
                     <div class="why-choose-vybe-left">&nbsp;</div>
-                    <div class="why-choose-vybe-right">No more fixed courses! Book classes according to your own interests and learn basic vocabulary and grammar before coming to class. We adopt EdTech so that students get the best of both worlds in learning a new language.
+                    <div class="why-choose-vybe-right"><Text tid="chineseWhyChooseVybeP2" />
                     </div>
                 </div>
 
                 <div class="why-choose-vybe-content">
                     <div class="why-choose-vybe-left">&nbsp;</div>
-                    <div class="why-choose-vybe-right">Our teaching style is active, not passive. We emphasize building confidence in speech and interacting with others through activities. Grammar and vocabulary is important, but not as important as being understood.
+                    <div class="why-choose-vybe-right"><Text tid="chineseWhyChooseVybeP3" />
                     </div>
                 </div>
             </div>
@@ -97,9 +98,9 @@ export default class Mandarin extends React.Component{
                 <div class="two columns">&nbsp;</div>
                 <div class="three columns">
                     
-                    <h1 class="uppercase">Types of Classes</h1>
+                    <h1 class="uppercase"><Text tid="chineseTypesOfClasses" /></h1>
                     <br/>
-                    <p>Our Chinese curriculum is designed to accommodate each and every step of your language learning journey. 
+                    <p><Text tid="chineseTypesOfClassesP" />
                     </p>
                     </div>
                    
@@ -109,12 +110,11 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
         
-            <CollapsibleCurriculum number="01" title="Foundational classes" description ="Designed for beginners to build basic communication skills.">
+            <CollapsibleCurriculum number={<Text tid="chineseCurriculum1Num" />} title={<Text tid="chineseCurriculum1Title" />} description ={<Text tid="chineseCurriculum1Desc" />}>
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p> 
-                    Our Foundational classes revolve around teaching CEFR A1 and A2 grammar and vocabulary. Learn the basics and slowly build your confidence in speaking and using Chinese. If you ever feel like our foundational classes are too easy, simply take a placement test to be able to join our topical classes!
+                    <p><Text tid="chineseCurriculum1MoreDesc" />
                     </p>
                 </div>
             </div>
@@ -127,11 +127,11 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <CollapsibleCurriculum number="02" title="Topical classes" description ="Designed for intermediate learners to learn new and relevant topics.">
+            <CollapsibleCurriculum number={<Text tid="chineseCurriculum2Num" />} title={<Text tid="chineseCurriculum2Title" />} description ={<Text tid="chineseCurriculum2Desc" />}>
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p>Our theme-based topical classes range from CEFR A2-B2 level. They are suitable for a wide range of intermediate learners who have already learned some basic grammar and vocabulary, and would like to further practice using Chinese across a variety of situations.
+                    <p><Text tid="chineseCurriculum2MoreDesc" />
                     </p>
                 </div>
             </div>
@@ -144,11 +144,11 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <CollapsibleCurriculum number="03" title="Conversational classes" description ="Designed for all learners who wish to practice speaking and expressing themselves.">
+            <CollapsibleCurriculum number={<Text tid="chineseCurriculum3Num" />} title={<Text tid="chineseCurriculum3Title" />} description ={<Text tid="chineseCurriculum3Desc" />}>
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p>Our Conservational classes provide students with a safe space to think and practice speaking, mimicking the actual conversations we would have with friends in a foreign country. 
+                    <p><Text tid="chineseCurriculum3MoreDesc" />
                     </p>
                 </div>
             </div>
@@ -160,12 +160,11 @@ export default class Mandarin extends React.Component{
                 </div>
             </div>
 
-            <CollapsibleCurriculum number="04" title="Activity classes" description ="Designed for all learners to bond through fun, miscellaneous activities
-            ">
+            <CollapsibleCurriculum number={<Text tid="chineseCurriculum4Num" />} title={<Text tid="chineseCurriculum4Title" />} description ={<Text tid="chineseCurriculum4Desc" />}>
             <div class="row">
                 <div class="six columns">&nbsp;</div>
                 <div class="three columns bottom-margin">
-                    <p>Our Activity classes consist of multimedia games and interactive events which provide a space for our students to connect and get to know one another. This provides an immersive experience and strengthens the vybe community spirit.
+                    <p><Text tid="chineseCurriculum4MoreDesc" />
                     </p>
                 </div>
             </div>
@@ -186,9 +185,9 @@ export default class Mandarin extends React.Component{
             <div class="row">
                 <div class="one columns">&nbsp;</div>
                 <div class="six columns">
-                    <h1 class="uppercase">Subscription Based Learning</h1>
+                    <h1 class="uppercase"><Text tid="chineseSubscriptionsHeading" /></h1>
                     <br/>
-                    <p class="extra-bottom-margin">Our flexible plans cater to your learning needs.</p>
+                    <p class="extra-bottom-margin"><Text tid="chineseSubscriptionsP" /></p>
                 </div>
             </div>
             <div class="row">
@@ -197,21 +196,21 @@ export default class Mandarin extends React.Component{
                     <div class="subscription-card u-max-full-width left-card">
                         <div class="subscription-card-top">
                             <img class="tier-image" src="/assets/images/Tier-img1.png"></img>
-                            <section class="tier-name">
-                                <h5 class>TIER 1</h5>
-                                <p class="slate aligncenter">฿ <h2 class="tier-price">12,345</h2> / month</p>
-                            </section>
+							<section class="tier-name">
+							<h5 class><Text tid="chineseTier1Heading" /></h5>
+							<p class="slate aligncenter">฿ <h2 class="tier-price"><Text tid="chineseTier1Price" /></h2><Text tid="chineseSubscriptionsPerMonth" /></p>
+						</section>
                         </div>
                         <div class="tier-divider"></div>
                         <section class="tier-features">
                             <ul>
-                               <li><span>This is a <strong>Tier 1 feature.</strong></span></li> 
-                               <li><span>This is <strong>another</strong> Tier 1 feature.</span></li>
-                               <li><span>This is the <strong>last</strong> Tier 1 feature.</span> </li>
+                               <li><span><Text tid="chineseTier1Bullet1" /></span></li> 
+                               <li><span><Text tid="chineseTier1Bullet2" /></span></li>
+                               <li><span><Text tid="chineseTier1Bullet3" /></span> </li>
                                <li class="hidden">Hidden</li>
                             </ul>
                         </section>
-                        <button class="uppercase tier-button" onClick={() => this.setTier(1, "12,345")} >Get Started</button>
+                        <button class="uppercase tier-button" onClick={() => this.setTier(1, <Text tid="chineseTier1Price" />)} ><Text tid="chineseSubscriptionsCTA" /></button>
                         </div>
                 </div>
             
@@ -220,20 +219,20 @@ export default class Mandarin extends React.Component{
                     <div class="subscription-card-top">
                     <img class="tier-image" src="/assets/images/Tier-img2.png"></img>
                     <section class="tier-name">
-                        <h5 class>TIER 2</h5>
-                        <p class="slate aligncenter">฿ <h2 class="tier-price">12,345</h2> / month</p>
+                                <h5 class><Text tid="chineseTier2Heading" /></h5>
+                                <p class="slate aligncenter">฿ <h2 class="tier-price"><Text tid="chineseTier2Price" /></h2><Text tid="chineseSubscriptionsPerMonth" /></p>
                     </section>
                     </div>
                     <div class="tier-divider"></div>
                     <section class="tier-features">
                         <ul>
-                        <li><span>This is a <strong>Tier 2 feature.</strong></span></li> 
-                        <li><span>This is <strong>another</strong> Tier 2 feature.</span></li>
-                        <li><span>This is the <strong>third</strong> Tier 2 feature.</span> </li>
-                        <li><span>This is the <strong>last</strong> Tier 2 feature.</span> </li>
+                        <li><span><Text tid="chineseTier2Bullet1" /></span></li> 
+                        <li><span><Text tid="chineseTier2Bullet2" /></span></li>
+                        <li><span><Text tid="chineseTier2Bullet3" /></span> </li>
+                        <li><span><Text tid="chineseTier2Bullet4" /></span> </li>
                         </ul>
                     </section>
-                    <button class="uppercase tier-button" onClick={() => this.setTier(2, "12,345")} >Get Started</button>
+                    <button class="uppercase tier-button" onClick={() => this.setTier(2, <Text tid="chineseTier2Price" />)} ><Text tid="chineseSubscriptionsCTA" /></button>
                     </div>
                 </div>
             
@@ -243,20 +242,20 @@ export default class Mandarin extends React.Component{
                     <div class="subscription-card-top">
                             <img class="tier-image" src="/assets/images/Tier-img3.png"></img>
                             <section class="tier-name">
-                                <h5 class>TIER 1</h5>
-                                <p class="slate aligncenter">฿ <h2 class="tier-price">12,345</h2> / month</p>
+                                <h5 class><Text tid="chineseTier3Heading" /></h5>
+                                <p class="slate aligncenter">฿ <h2 class="tier-price"><Text tid="chineseTier3Price" /></h2><Text tid="chineseSubscriptionsPerMonth" /></p>
                             </section>
                         </div>
                         <div class="tier-divider"></div>
                         <section class="tier-features">
                             <ul>
-                               <li><span>This is a <strong>Tier 3 feature.</strong></span></li> 
-                               <li><span>This is <strong>another</strong> Tier 3 feature.</span></li>
-                               <li><span>This is the <strong>third</strong> Tier 3 feature.</span> </li>
-                                <li><span>This is the <strong>last</strong> Tier 3 feature.</span> </li>
+                               <li><span><Text tid="chineseTier3Bullet1" /></span></li> 
+                               <li><span><Text tid="chineseTier3Bullet2" /></span></li>
+                               <li><span><Text tid="chineseTier3Bullet3" /></span> </li>
+                                <li><span><Text tid="chineseTier3Bullet4" /></span> </li>
                             </ul>
                         </section>
-                        <button class="uppercase tier-button" onClick={() => this.setTier(3, "12,345")} >Get Started</button>
+                        <button class="uppercase tier-button" onClick={() => this.setTier(3, <Text tid="chineseTier3Price" />)} ><Text tid="chineseSubscriptionsCTA" /></button>
                         </div>
                 </div>
 

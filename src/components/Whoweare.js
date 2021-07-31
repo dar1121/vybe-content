@@ -1,4 +1,6 @@
 import React from 'react';
+import { Text, LanguageContext } from '../context/Language';
+
 
 export default class Whoweare extends React.Component{
 
@@ -75,7 +77,7 @@ export default class Whoweare extends React.Component{
             <div class="one columns"> &nbsp; </div>
             <div class="six columns extra-top-margin">
                 <h1> 
-                VYBE arose from our desire to create a language learning experience that is both current and engaging.
+                    <Text tid="aboutHeading" />
                 </h1>
             </div>
         </div>
@@ -84,17 +86,15 @@ export default class Whoweare extends React.Component{
         <div class="one columns"> &nbsp; </div>
         <div class="three columns">
             <p>
-            At vybe, many of our teachers have lived abroad and understand the difficulties and frustrations of learning a new language. 
+            <Text tid="aboutP1" />
             <br/><br/>
-            Learning a language takes time and patience. It is often easy to give up learning a foreign language when studying starts to get boring and our lives start to get busy. 
-
+            <Text tid="aboutP2" />
             </p>
         </div>
 
         <div class="three columns">
             <p>
-            That is why we have curated and designed a curriculum that goes beyond what is covered in textbooks, bringing in topics that are most relevant and engaging in the lives of our students. 
-            </p>
+            <Text tid="aboutP3" />            </p>
         </div>
         </div>
         
@@ -102,7 +102,7 @@ export default class Whoweare extends React.Component{
         
         <div class="our-story fixed-bg">
             <div class="section-title">
-            Our Story
+            <Text tid="aboutOurStory" />
             </div>
 
             <div class="row">
@@ -113,15 +113,14 @@ export default class Whoweare extends React.Component{
                 <div class="one columns"> &nbsp;</div>
                 <div class="five columns extra-top-margin">
                 <p>
-                It all started with our own experience learning foreign languages. We spent 5 years learning Chinese through apps and attending classes, yet when we went to China, our minds blanked and we could only stutter and stammer as we spoke to the locals. We realized that more than 80% of what we learnt from textbooks and classes were inadequate. Despite the initial hiccup, we did not give up our passion for learning, and challenged ourselves by staying in Shanghai for 6 months. Through living, conversing and immersing ourselves with the local community, we gradually gained confidence and fluency in using Chinese.                </p>
-                <br/><br/>
-                <p>
-                Our language learning journey taught us that one of the most effective ways to master a new language is by using it in a foreign country. However, the act of immersion does not guarantee a smooth language learning journey. We still have to be proactive in reaching out and actively communicating with others in order to grow. During our stay in Shanghai, we met a British teacher who had lived in China for over 10 years, yet he could not speak a word of Chinese. Why? Because he never bothered to speak Chinese when shopping on Nanjing Road or dining at Xin Tian Di. 
+                <Text tid="aboutOurStoryP1" />
                 </p>
                 <br/><br/>
                 <p>
-                We then realized that language learning is not only about immersion, but more importantly, it is also about taking advantage of touch points to communicate in a foreign language. For this reason, we hope to disrupt the way that languages are traditionally taught by bringing the overseas immersion experience into the local context of Southeast Asia and providing students with opportunities to speak up.
-                </p>
+                <Text tid="aboutOurStoryP2" />                </p>
+                <br/><br/>
+                <p>
+                <Text tid="aboutOurStoryP3" />                </p>
                 <br/><br/>
                 </div>
             </div>
@@ -131,7 +130,7 @@ export default class Whoweare extends React.Component{
         <div class="our-values">
         
             <div class="section-title">
-                Our Values
+                <Text tid="aboutOurValues" />
             </div>
         
             <div class="row extra-top-margin">
@@ -160,11 +159,11 @@ export default class Whoweare extends React.Component{
         <div class="open-positions-cta">
             <div class="open-positions-circle">
                 <div class="open-positions-text">
-                    <h1 class="op-question teal uppercase">Do our mission and values resonate with you?</h1>
+                    <h1 class="op-question teal uppercase"><Text tid="aboutOPQ" /></h1>
                     <br/>
-                    <p class="op-p">We are currently looking for like-minded individuals to join the growing vybe team. </p>
+                    <p class="op-p"><Text tid="aboutOPP" /></p>
                     <br/>
-                    <a href="/careers" class="op-button button uppercase">See Our Open Positions</a>
+                    <a href="/careers" class="op-button button uppercase"><Text tid="aboutOPCTA" /></a>
                 </div>
             </div>
         
