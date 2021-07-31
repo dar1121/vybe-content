@@ -44,7 +44,15 @@ module.exports = (env) => {
               }
             ]
           },
-        ]
+          {
+            type: 'javascript/auto',
+            test: /\.json$/,
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'languages/'
+            }
+          }]
     },
     plugins: [].concat(isProduction ? [] : [new MiniCssExtractPlugin()]),
     devtool: isProduction ? 'source-map' : 'eval-cheap-module-source-map',
