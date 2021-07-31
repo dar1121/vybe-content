@@ -49,8 +49,7 @@ module.exports = (env) => {
             test: /\.json$/,
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'languages/'
+              name: '[name].[ext]'
             }
           }]
     },
