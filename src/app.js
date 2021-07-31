@@ -18,7 +18,6 @@ import English from './components/English';
 import Mandarin from './components/Mandarin';
 
 import { LanguageProvider } from './context/Language';
-import LanguageSelector from './components/Languageselector'
 
 import Faq from './components/Faq';
 import Tos from './components/Tos';

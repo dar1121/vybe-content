@@ -31,19 +31,7 @@ module.exports = (env) => {
         },   {
             test: /\.svg$/,
             loader: 'svg-inline-loader'
-        },
-        {
-            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-            use: [
-              {
-                loader: 'file-loader',
-                options: {
-                  name: '[name].[ext]',
-                  outputPath: 'fonts/'
-                }
-              }
-            ]
-          }]
+        }]
     },
     plugins: [].concat(isProduction ? [] : [new MiniCssExtractPlugin()]),
     devtool: isProduction ? 'source-map' : 'eval-cheap-module-source-map',
