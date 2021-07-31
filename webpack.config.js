@@ -43,14 +43,6 @@ module.exports = (env) => {
                 }
               }
             ]
-          },
-          {
-            type: 'javascript/auto',
-            test: /\.json$/,
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]'
-            }
           }]
     },
     plugins: [].concat(isProduction ? [] : [new MiniCssExtractPlugin()]),
