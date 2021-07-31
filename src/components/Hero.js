@@ -1,5 +1,7 @@
 import React from 'react';
 import { Text, LanguageContext } from '../context/Language';
+import Header from './Header';
+
 
 
 
