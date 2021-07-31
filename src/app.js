@@ -18,7 +18,6 @@ import English from './components/English';
 import Mandarin from './components/Mandarin';
 
 import { LanguageProvider } from './context/Language';
-import { Text, LanguageContext } from './context/Language';
 import LanguageSelector from './components/Languageselector'
 
 import Faq from './components/Faq';
@@ -35,9 +34,9 @@ const VybeIndex = () => (
             <Hero />
             <Header>
                 <ul>
-                    <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-                    <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-                    <li class="selected"><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                    <li class="languages"><a href="/#our-languages">Languages</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
+                    <li class="selected"><a href="/">What We Do</a></li>  
                 </ul>
                 
             </Header>
@@ -55,9 +54,9 @@ const EnglishCourse = () => (
     <div>
             <Header>
                 <ul>
-                    <li class="selected languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-                    <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                    <li class="selected languages"><a href="/#our-languages">Languages</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
+                    <li class=""><a href="/">What We Do</a></li>  
                 </ul>
             </Header>
             <English />
