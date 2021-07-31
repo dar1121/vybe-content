@@ -1,11 +1,19 @@
 import React from 'react';
 import { Text, LanguageContext } from '../context/Language';
-
+import Header from './Header';
 
 
 export default class Tos extends React.Component{
     render() {
-        return <div class="container">
+        return <div>
+        <Header>
+                <ul>
+                    <li class="languages"><a href="/#our-languages">Languages</a></li>
+                    <li class=""><a href="/about-us">Who We Are</a></li>
+                    <li class=""><a href="/">What We Do</a></li>  
+                </ul>
+            </Header>
+            <div class="container">
             <div class="tos-heading">
                 <div class="row">
                     <div class="one columns">&nbsp;</div>
@@ -35,6 +43,7 @@ export default class Tos extends React.Component{
                 
                 </div>
             </div>
+        </div>
         </div>
     }
 }

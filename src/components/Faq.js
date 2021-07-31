@@ -1,12 +1,20 @@
 import React from 'react';
 import CollapsibleQuestion from './CollapsibleQuestion';
 import { Text, LanguageContext } from '../context/Language';
-
+import Header from './Header';
 
 
 export default class Faq extends React.Component{
     render() {
-        return <div class="container">
+        return <div>
+        <Header>
+        <ul>
+            <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
+            <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
+            <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+        </ul>
+    </Header>
+   <div class="container">
             <div class="faq-heading">
                 <div class="row">
                     <div class="one columns">&nbsp;</div>
@@ -64,6 +72,7 @@ export default class Faq extends React.Component{
                 
                 </div>
             </div>
+        </div>
         </div>
     }
 }

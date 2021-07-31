@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, LanguageContext } from '../context/Language';
+import Header from './Header';
 
 
 export default class Whoweare extends React.Component{
@@ -69,7 +70,15 @@ export default class Whoweare extends React.Component{
        }
 
     render() {
-        return <div class="container">
+        return <div>
+        <Header>
+                <ul>
+                    <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
+                    <li class="selected"><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
+                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                </ul>
+            </Header>
+            <div class="container">
         
         <div class="who-we-are1 fixed-bg">
         
@@ -170,7 +179,7 @@ export default class Whoweare extends React.Component{
         </div>
         
         </div>
-
+        </div>
         
         
     }

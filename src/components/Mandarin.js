@@ -5,6 +5,7 @@ import { init } from 'emailjs-com';
 init("user_JjmLKCBJBxK1mSzjw7tMX");
 import EscapeOutside from "react-escape-outside";
 import { Text, LanguageContext } from '../context/Language';
+import Header from './Header';
 
 
 export default class Mandarin extends React.Component{
@@ -34,7 +35,15 @@ export default class Mandarin extends React.Component{
     render() {
        
 
-        return <div class="container">
+        return <div>
+        <Header>
+                <ul>
+                    <li class="selected languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
+                    <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
+                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                </ul>
+            </Header>
+        <div class="container">
         <div class="learn-mandarin fixed-bg">
             <div class="row">
                 <div class="one columns">&nbsp;</div>
@@ -277,6 +286,6 @@ export default class Mandarin extends React.Component{
                 price={this.state.price}/>
             </EscapeOutside> 
             </div> : null}
-        </div>
+        </div></div>
     }
 }

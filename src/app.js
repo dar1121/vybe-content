@@ -43,13 +43,6 @@ const VybeIndex = () => (
 
 const EnglishCourse = () => (
     <div>
-            <Header>
-                <ul>
-                    <li class="selected languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
             <English />
             <Footer />
     </div>
@@ -58,13 +51,6 @@ const EnglishCourse = () => (
 
 const MandarinCourse = () => (
     <div>
-            <Header>
-                <ul>
-                    <li class="selected languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
             <Mandarin />
             <Footer />
     </div>
@@ -73,13 +59,6 @@ const MandarinCourse = () => (
 
 const AboutUs = () => (
     <div>
-            <Header>
-                <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class="selected"><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
             <Whoweare />
             <Footer />
     </div>
@@ -88,13 +67,6 @@ const AboutUs = () => (
 
 const CareersPage = () => (
     <div>
-            <Header>
-                <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
             <Careers />
             <Footer />
     </div>
@@ -103,58 +75,17 @@ const CareersPage = () => (
 
 const FaQ = () => (
     <div>
-            <Header>
-                <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
             <Faq />
             <Footer />
     </div>
 
 );
 
-const OurLanguages = () => (
-    <div>
-            <Header>
-                <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
-                <Languages />
-            <Footer />
-    </div>
 
-);
 
-const Applicationform = () => (
-    <div>
-            <Header>
-                <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
-            <ApplicationForm />
-            <Footer />
-    </div>
-
-);
 
 const ToS = () => (
     <div>
-            <Header>
-                <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
-                </ul>
-            </Header>
             <Tos />
             <Footer />
     </div>
@@ -167,11 +98,8 @@ const routes = (
     <Router>  
     <div>
         <Route path="/" component={VybeIndex} exact={true} />  
-        <Route path="/our-languages" component={OurLanguages} exact={true} />
         <Route path="/english" component={EnglishCourse} exact={true} /> 
         <Route path="/mandarin" component={MandarinCourse} exact={true} /> 
-
-        <Route path="/apply" component={Applicationform} exact={true} />  
         <Route path="/about-us" component={AboutUs} exact={true} /> 
         <Route path="/careers" component={CareersPage} exact={true} /> 
         <Route path="/faq" component={FaQ} exact={true} />  
