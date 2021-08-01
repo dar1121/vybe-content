@@ -2,6 +2,8 @@ import React from 'react';
 import { init } from 'emailjs-com';
 init("user_JjmLKCBJBxK1mSzjw7tMX");
 import { Text, LanguageContext } from '../context/Language';
+import EscapeOutside from "react-escape-outside";
+
 
 
 export default class Applicationform extends React.Component{
@@ -13,6 +15,7 @@ export default class Applicationform extends React.Component{
           phone_number: "",
           chosen_tier: this.props.tier,
           start_date: "",
+          submitModal: false
           
         }
     };
@@ -57,13 +60,14 @@ export default class Applicationform extends React.Component{
         from_email: "",
         phone_number: "",
         chosen_tier: this.props.tier,
-        start_date: ""
+        start_date: "",
+        submitModal: true
         });
       }
  
     render() {
         
-        return  <div class="formcontainer">
+        return  <div><div class="formcontainer">
            
            <h1 class="uppercase"> <Text tid="applicationFormHeader" /> </h1>
            <br/>
@@ -139,7 +143,24 @@ export default class Applicationform extends React.Component{
                 <br/>
                 <button type="submit" onClick={this.sendMessage.bind(this)} > <Text tid="applicationSendRequest"/> </button>
             </form>
+
         </div>
+        {this.state.submitModal ? 
+            <div class="overlayModal">
+            <EscapeOutside 
+                onEscapeOutside={ this.handleEscapeOutside }
+                style={{
+                width:'30%',
+                margin: '18% 30%',
+                top:'0%',
+                }}>
+            <div class="formSubmitted"> 
+            Your request has been sent! 
+            <a href="/">Return to Home</a>
+            </div>
+            </EscapeOutside> 
+            </div> : null}
+            </div>
        
     }
     

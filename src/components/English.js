@@ -55,7 +55,7 @@ export default class English extends React.Component{
                 <Text tid="englishP" /></p>
                 <ol class="strong">
                     <li><span><Text tid="englishBullet1" /></span></li>
-                    <li><span><Text tid="englishBullet2" />g</span></li>
+                    <li><span><Text tid="englishBullet2" /></span></li>
                     <li><span><Text tid="englishBullet3" /></span></li>
                 </ol>
                 <button class="language-button uppercase">
