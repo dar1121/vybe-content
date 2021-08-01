@@ -60,11 +60,11 @@ export default class Footer extends React.Component{
             </div>
 
             <p class="footer-p">
-            <Text tid="addresline1" /><br/>
-            <Text tid="addresline2" /><br/>
-            <Text tid="addresline3" /><br/>
-            <Text tid="addresline4" /><br/>
-            <Text tid="addresline5" />
+            <Text tid="addressline1" /><br/>
+            <Text tid="addressline2" /><br/>
+            <Text tid="addressline3" /><br/>
+            <Text tid="addressline4" /><br/>
+            <Text tid="addressline5" />
             </p>
             </div>
 
