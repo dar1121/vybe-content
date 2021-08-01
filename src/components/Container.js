@@ -259,7 +259,7 @@ export default class Container extends React.Component {
                 <div class="row">
                     <div class="one columns">&nbsp;</div>
                     <div class="five columns">
-                        <h1 class="uppercase"><Text tid="containerOurLanguagesH" /></h1>
+                        <h1 class="uppercase"><Text tid="containerOurLanguages" /></h1>
                     </div>
                 </div>
 

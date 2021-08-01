@@ -7,6 +7,7 @@ import EscapeOutside from "react-escape-outside";
 import { Text, LanguageContext } from '../context/Language';
 import Header from './Header';
 
+
 export default class English extends React.Component{   
     constructor(props) {
         super(props);

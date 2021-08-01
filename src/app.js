@@ -1,5 +1,6 @@
 
-import React from 'react';
+import React  from 'react';
+import {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ import Header from './components/Header';
 import Container from './components/Container';
 import Footer from './components/Footer';
 import Languages from './components/Languages';
+import Loader from './components/Loader';
 
 import Hero from './components/Hero';
 import Whoweare from './components/Whoweare';
@@ -28,69 +30,168 @@ import ApplicationForm from './components/Applicationform';
 
 console.log('app.js is running');
 
-const VybeIndex = () => (
-    <div>
+const VybeIndex = () =>    {
+
+ const [loading, setLoading] = useState(true);
+useEffect(() => {
+  const loadData = async () => {
+    await new Promise((r) => setTimeout(r, 2000));
+    setLoading((loading) => !loading);
+  };       
+  loadData();
+}, [])
+if (loading) {
+    return <div><Loader /></div>
+}
+  
+else {
+    return <div>
             <Hero />
             <Container />
             <Footer />
             
     </div>
 
-);
+};
+}
 
 
 
 
-const EnglishCourse = () => (
-    <div>
+const EnglishCourse = () => {
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      const loadData = async () => {
+        await new Promise((r) => setTimeout(r, 2000));
+        setLoading((loading) => !loading);
+      };       
+      loadData();
+    }, [])
+    if (loading) {
+        return <div><Loader /></div>
+    }
+      
+    else {
+        return <div>
             <English />
             <Footer />
     </div>
 
-);
+};
 
-const MandarinCourse = () => (
-    <div>
+}
+
+const MandarinCourse  = () => {
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      const loadData = async () => {
+        await new Promise((r) => setTimeout(r, 2000));
+        setLoading((loading) => !loading);
+      };       
+      loadData();
+    }, [])
+    if (loading) {
+        return <div><Loader /></div>
+    }
+      
+    else {
+    return <div>
             <Mandarin />
             <Footer />
     </div>
 
-);
+    };
+}
 
-const AboutUs = () => (
-    <div>
+const AboutUs = () => {
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      const loadData = async () => {
+        await new Promise((r) => setTimeout(r, 2000));
+        setLoading((loading) => !loading);
+      };       
+      loadData();
+    }, [])
+    if (loading) {
+        return <div><Loader /></div>
+    }
+      
+    else {
+    return <div>
             <Whoweare />
             <Footer />
     </div>
 
-);
+    };
+}
 
-const CareersPage = () => (
-    <div>
+const CareersPage = () => {
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      const loadData = async () => {
+        await new Promise((r) => setTimeout(r, 2000));
+        setLoading((loading) => !loading);
+      };       
+      loadData();
+    }, [])
+    if (loading) {
+        return <div><Loader /></div>
+    }
+      
+    else {
+    return <div>
             <Careers />
             <Footer />
     </div>
 
-);
+    };
+}
 
-const FaQ = () => (
-    <div>
+const FaQ = () => {
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      const loadData = async () => {
+        await new Promise((r) => setTimeout(r, 2000));
+        setLoading((loading) => !loading);
+      };       
+      loadData();
+    }, [])
+    if (loading) {
+        return <div><Loader /></div>
+    }
+      
+    else {
+    return <div>
             <Faq />
             <Footer />
     </div>
 
-);
+    };
+}
 
 
 
 
-const ToS = () => (
-    <div>
+const ToS = () => {
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      const loadData = async () => {
+        await new Promise((r) => setTimeout(r, 2000));
+        setLoading((loading) => !loading);
+      };       
+      loadData();
+    }, [])
+    if (loading) {
+        return <div><Loader /></div>
+    }
+      
+    else {
+    return <div>
             <Tos />
             <Footer />
     </div>
 
-);
+    };}
 
 const routes = (
     <LanguageProvider>
