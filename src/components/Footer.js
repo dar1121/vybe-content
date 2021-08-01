@@ -43,7 +43,7 @@ export default class Footer extends React.Component{
             </div>
 
             <div class="footer-block">
-                <LanguageSelector />
+                
             </div>
         
             </div>

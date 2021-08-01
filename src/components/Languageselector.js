@@ -4,13 +4,18 @@ import { languageOptions } from '../languages';
 import { LanguageContext } from '../context/Language';
 
 export default function LanguageSelector() {
+
+
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
 
   // set selected language by calling context method
   const handleLanguageChange = e => userLanguageChange(e.target.value);
 
+   
   return (
+
     <select
+      class="languageselect"
       onChange={handleLanguageChange}
       value={userLanguage}
     >
@@ -18,5 +23,6 @@ export default function LanguageSelector() {
         <option key={id} value={id}>{name}</option>
       ))}
     </select>
+
   );
 };

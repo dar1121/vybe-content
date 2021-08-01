@@ -19,6 +19,8 @@ import Careers from './components/Careers';
 import English from './components/English';
 import Mandarin from './components/Mandarin';
 
+import LanguageSelector from './components/Languageselector';
+
 import { LanguageProvider } from './context/Language';
 
 import Faq from './components/Faq';
@@ -46,10 +48,10 @@ if (loading) {
   
 else {
     return <div>
+            <LanguageSelector />
             <Hero />
             <Container />
             <Footer />
-            
     </div>
 
 };
@@ -73,6 +75,7 @@ const EnglishCourse = () => {
       
     else {
         return <div>
+            <LanguageSelector />
             <English />
             <Footer />
     </div>
@@ -96,6 +99,7 @@ const MandarinCourse  = () => {
       
     else {
     return <div>
+            <LanguageSelector />
             <Mandarin />
             <Footer />
     </div>
@@ -118,6 +122,7 @@ const AboutUs = () => {
       
     else {
     return <div>
+            <LanguageSelector />
             <Whoweare />
             <Footer />
     </div>
@@ -140,6 +145,7 @@ const CareersPage = () => {
       
     else {
     return <div>
+            <LanguageSelector />
             <Careers />
             <Footer />
     </div>
@@ -162,6 +168,7 @@ const FaQ = () => {
       
     else {
     return <div>
+            <LanguageSelector />
             <Faq />
             <Footer />
     </div>
@@ -187,6 +194,7 @@ const ToS = () => {
       
     else {
     return <div>
+            <LanguageSelector />
             <Tos />
             <Footer />
     </div>
