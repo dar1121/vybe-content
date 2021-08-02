@@ -38,9 +38,9 @@ export default class Mandarin extends React.Component{
         return <div>
         <Header>
                 <ul>
-                    <li class="selected languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-                    <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                    <a href="/#our-languages"><li class="selected languages"><Text tid="navilanguages" /></li></a>
+                    <a href="/about-us"><li class=""><Text tid="naviwhoweare" /></li></a>
+                    <a href="/"><li class=""><Text tid="naviwhatwedo" /></li></a>
                 </ul>
             </Header>
         <div class="container">
@@ -58,9 +58,9 @@ export default class Mandarin extends React.Component{
                 <Text tid="chineseP" />
                 </p>
                 <ol class="strong">
-                    <li><span><Text tid="chineseBullet1" /></span></li>
-                    <li><span><Text tid="chineseBullet2" /></span></li>
-                    <li><span><Text tid="chineseBullet3" /></span></li>
+                    <li><span class="nopadding"><Text tid="chineseBullet1" /></span></li>
+                    <li><span class="nopadding"><Text tid="chineseBullet2" /></span></li>
+                    <li><span class="nopadding"><Text tid="chineseBullet3" /></span></li>
                 </ol>
                 <a href="/#apply" class=" button uppercase language-button"><Text tid="chineseButton" /></a>
                 </div>

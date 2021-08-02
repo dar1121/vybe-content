@@ -410,7 +410,7 @@ html {
   max-width: 1300px;
   margin: 0 auto;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 100px;
 }
 
 .footer-block {
@@ -424,7 +424,14 @@ html {
   letter-spacing: 2.25px;
 }
 
+.footer-img {
+  height: 36px;
+  width: auto;
+}
 
+.footer-imglink {
+  margin: 0px 5% 0px 0px;
+}
 .footer-block a:hover {
   border-bottom: 1px solid black;
 }
@@ -567,6 +574,7 @@ html {
 
   .our-core-values{
     height: 580vw;
+    background-size: auto 100vh;
   }
 
   .circle {
@@ -668,12 +676,14 @@ html {
   -moz-border-radius: 16px;
   border-radius: 16px;
   padding: 24px;
+  margin: 16px 0;
 }
 
 .english-card {
   background-image: url('./Englishcard-bg.png');
   background-size: 110% auto;
   background-position: -4px -4px ;
+  background-repeat: no-repeat;
 
 }
 
@@ -681,6 +691,7 @@ html {
   background-image: url('./Mandarincard-bg.png');
   background-size: 110% auto;
   background-position: -4px -4px ;
+  background-repeat: no-repeat;
 
   
 }
@@ -707,7 +718,7 @@ html {
 
 .our-values {
   width:96%;
-  padding: 10% 2%;
+  padding: 10% 2% 20% 2%;
   background-color: $lightteal;
   border-radius:  0 0 16px 16px;
 }
@@ -715,7 +726,7 @@ html {
 .our-values-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 100px 0.5fr 0.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -1200,6 +1211,12 @@ ol {
 }
 li span {
   padding-left: 16px;
+  
+}
+
+.nopadding {
+  padding-left: 0px;
+  
 }
 
 ul .hidden {
@@ -1507,16 +1524,16 @@ a {
   box-sizing: border-box; 
 
   color: $black;
-  background-color: $lightteal;
+  background-color: $white;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;  
 
   z-index:500;
-
+  border: 1px solid black;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

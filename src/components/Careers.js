@@ -7,9 +7,9 @@ export default class Careers extends React.Component {
 		return <div>
 		<Header>
                 <ul>
-                    <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-                    <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+					<a href="/#our-languages"><li class="languages"><Text tid="navilanguages" /></li></a>
+                    <a href="/about-us"><li class=""><Text tid="naviwhoweare" /></li></a>
+                    <a href="/"><li class=""><Text tid="naviwhatwedo" /></li></a>
                 </ul>
             </Header>
 			<div class="container">
@@ -97,9 +97,11 @@ export default class Careers extends React.Component {
 							<h1 class="uppercase">
 								<Text tid="careersSendCV" />
 							</h1>
+							<a href="mailto:vybe[@]glocal.co.th">
 							<button class="open-apply-button">
 								<Text tid="careersApplyNow" />
 							</button>
+							</a>
 						</div>
 					</div>
 				</div>

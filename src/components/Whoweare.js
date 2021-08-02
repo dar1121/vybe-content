@@ -3,6 +3,7 @@ import { Text, LanguageContext } from '../context/Language';
 import Header from './Header';
 
 
+
 export default class Whoweare extends React.Component{
 
     constructor(props) {
@@ -15,8 +16,9 @@ export default class Whoweare extends React.Component{
     valueOne = () => {
        
         let chosenvalue = document.getElementsByClassName('chosen-value');
-        chosenvalue[0].innerHTML = 
-                        '<br/> <h1 class="uppercase">Relevance</h1> <br/> <p>We strive to constantly evolve and update our curriculum to ensure that our students learn topics that are beyond textbook scenarios.</p>';
+        const data = require('../languages/en.json');     
+        let text = '<br/> <h1 class="uppercase">' + data.aboutValue1 + '</h1> <br/> <p>' + data.aboutValue1P + '</p>'
+        chosenvalue[0].innerHTML = text;
                         
         let firstvalue = document.getElementsByClassName('value-1');
         
@@ -34,8 +36,9 @@ export default class Whoweare extends React.Component{
     valueTwo = () => {
         
         let chosenvalue = document.getElementsByClassName('chosen-value');
-        chosenvalue[0].innerHTML = 
-                        '<br/> <h1 class="uppercase">Community</h1> <br/> <p>Learning is always more fun in a group. We believe that having friends who share the same passion in learning new languages will motivate and encourage us to never give up.</p>';
+        const data = require('../languages/en.json');     
+        let text = '<br/> <h1 class="uppercase">' + data.aboutValue2 + '</h1> <br/> <p>' + data.aboutValue2P + '</p>'
+        chosenvalue[0].innerHTML = text;
                         
                     
         let secondvalue = document.getElementsByClassName('value-2');
@@ -53,9 +56,9 @@ export default class Whoweare extends React.Component{
     valueThree = () => {
         
         let chosenvalue = document.getElementsByClassName('chosen-value');
-        chosenvalue[0].innerHTML = 
-                        '<br/> <h1 class="uppercase">Adventure</h1> <br/> <p>	Learning a new language is difficult, but it should never be boring. We believe in giving our students opportunities to speak out and learn to express themselves in a new language.</p>';
-                        ;
+        const data = require('../languages/en.json');
+        let text = '<br/> <h1 class="uppercase">' + data.aboutValue3 + '</h1> <br/> <p>' + data.aboutValue3P + '</p>';
+        chosenvalue[0].innerHTML = text;                        ;
         let thirdvalue = document.getElementsByClassName('value-3');
         thirdvalue[0].classList.add('chosen')
         let secondvalue = document.getElementsByClassName('value-2');
@@ -73,9 +76,9 @@ export default class Whoweare extends React.Component{
         return <div>
         <Header>
                 <ul>
-                    <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-                    <li class="selected"><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                <a href="/#our-languages"><li class="languages"><Text tid="navilanguages" /></li></a>
+                <a href="/about-us"><li class="selected"><Text tid="naviwhoweare" /></li></a>
+                <a href="/"><li class=""><Text tid="naviwhatwedo" /></li>  </a>
                 </ul>
             </Header>
             <div class="container">

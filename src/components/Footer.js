@@ -23,7 +23,7 @@ export default class Footer extends React.Component{
                 </div>
 
                 <div class="footer-block">
-                    <a href="/mandarin"><Text tid="navichinese" /></a>
+                    <a href="/chinese"><Text tid="navichinese" /></a>
                 </div>
             </div>
 
@@ -81,7 +81,15 @@ export default class Footer extends React.Component{
             </div>
 
             <div class="footer-block">
-                (Links here)
+                <a class="footer-imglink" href="https://www.facebook.com/go.vybe">
+                    <img src="/assets/images/facebook-square-brands.png" class="footer-img" />
+                </a>
+                <a class="footer-imglink" href="https://www.instagram.com/go.vybe/">
+                    <img src="/assets/images/instagram-square-brands.png" class="footer-img" />
+                </a>
+                <a class="footer-imglink" href="https://www.linkedin.com/company/vybe-education">
+                    <img src="/assets/images/linkedin-brands.png" class="footer-img" />
+                </a>
             </div>
 
             </div>

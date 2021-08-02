@@ -208,7 +208,7 @@ const routes = (
     <div>
         <Route path="/" component={VybeIndex} exact={true} />  
         <Route path="/english" component={EnglishCourse} exact={true} /> 
-        <Route path="/mandarin" component={MandarinCourse} exact={true} /> 
+        <Route path="/chinese" component={MandarinCourse} exact={true} /> 
         <Route path="/about-us" component={AboutUs} exact={true} /> 
         <Route path="/careers" component={CareersPage} exact={true} /> 
         <Route path="/faq" component={FaQ} exact={true} />  

@@ -5,7 +5,7 @@ import zh from './zh.json';
 export const dictionaryList = { en, th, zh };
 
 export const languageOptions = {
-  en: 'English',
-  th: 'Thai',
-  zh: 'Chinese'
+  en: 'ENG',
+  th: 'ไทย',
+  zh: '中文'
 };

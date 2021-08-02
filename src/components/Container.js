@@ -270,7 +270,7 @@ export default class Container extends React.Component {
                     </div>
                 </div>
 
-                <div class="row extra-top-margin">
+                <div class="row">
                     <div class="two columns"> &nbsp; </div>
                     <div class="course-card english-card four columns">
                         <h2 class="uppercase"><Text tid="containerOurLanguagesEnglishH" /></h2>
@@ -284,7 +284,7 @@ export default class Container extends React.Component {
                         <p>
                         <Text tid="containerOurLanguagesChineseP" />
                         </p>
-                        <a href="/mandarin" class=" button uppercase language-button"><Text tid="containerOurLanguagesJoinNow" /></a>
+                        <a href="/chinese" class=" button uppercase language-button"><Text tid="containerOurLanguagesJoinNow" /></a>
 
                     </div>
                 </div>

@@ -8,9 +8,9 @@ export default class Tos extends React.Component{
         return <div>
         <Header>
                 <ul>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class=""><a href="/">What We Do</a></li>  
+                <a href="/#our-languages"><li class="languages">Languages</li></a>
+                <a href="/about-us"><li class="">Who We Are</li></a>
+                <a href="/"><li class="">What We Do</li></a>
                 </ul>
             </Header>
             <div class="container">

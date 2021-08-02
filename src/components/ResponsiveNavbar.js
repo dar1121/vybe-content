@@ -1,4 +1,6 @@
 import React from 'react';
+import { Text, LanguageContext } from '../context/Language';
+
 
 export default class ResponsiveNavbar extends React.Component{
     constructor(props){
@@ -9,9 +11,9 @@ export default class ResponsiveNavbar extends React.Component{
     render() {
       return (<div class="responsive-navbar">
                 <ul>
-                    <li class="selected"><a href="/">What We Do</a></li>  
-                    <li class=""><a href="/about-us">Who We Are</a></li>
-                    <li class="languages"><a href="/#our-languages">Languages</a></li>
+                    <a href="/"><li class="selected"><Text tid="naviwhatwedo" /></li>  </a>
+                    <a href="/about-us"><li class=""><Text tid="naviwhoweare" /></li></a>
+                    <a href="/#our-languages"><li class="languages"><Text tid="navilanguages" /></li></a>
                 </ul>
     </div>
   

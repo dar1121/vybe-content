@@ -23,11 +23,11 @@
   "containerOurSpaceTagline1":"A SPACE TO",
   "containerOurSpaceTagline1Em":"COMMUNICATE",
   "containerOurSpaceCaption1H":"INCREASING TOUCH POINTS IN OUR COMMUNITY",
-  "containerOurSpaceCaption1":"VYBE is an exciting environment located at the heart of Bangkok. Through ground-up initiatives or teacher-organised events, our students will always have the opportunity to participate and interact with others.",
+  "containerOurSpaceCaption1":"vybe is an exciting environment located at the heart of Bangkok. Through ground-up initiatives or teacher-organised events, our students will always have the opportunity to participate and interact with others.",
   "containerOurSpaceCaption2": "Strike up a conversation with our teachers and language facilitators.",
-  "containerOurSpaceCaption3": "Inviting YOU to join the VYBE Community.",
+  "containerOurSpaceCaption3": "Inviting YOU to join the vybe Community.",
   "containerOurSpaceTagline2Em": "IMMERSE",
-  "containerOurSpaceTagline2": "WITH VYBE.",
+  "containerOurSpaceTagline2": "WITH vybe.",
   "containerOurSpaceCaption4H": "Chat with new friends",
   "containerOurSpaceCaption4":"Our conversational classes are not held in small, enclosed spaces, but within our wide common area. At vybe, you will surely feel as if you are walking into a “Starbucks” of another country.",
   "containerOurSpaceCaption5": "Play games and participate in activities with your friends at vybe!",
@@ -41,9 +41,9 @@
 
   "containerOurLanguages": "Our Languages",
   "containerOurLanguagesHeading": "Speak with Confidence, Purpose, and Flair",
-  "containerOurLanguagesP": "We currently offer two languages for students to learn at VYBE.",
+  "containerOurLanguagesP": "We currently offer two languages for students to learn at vybe.",
   "containerOurLanguagesEnglishH": "English",
-  "containerOurLanguagesEnglishP": "Learn English in a welcoming, fun environment. Choose topics that match your interest or pick up interview skills with us at vybe.",
+  "containerOurLanguagesEnglishP": "Learn English in an immersive environment. Choose topics that match your interest or pick up interview skills with us at vybe.",
   "containerOurLanguagesChineseH": "Chinese",
   "containerOurLanguagesChineseP": "Learn Chinese and Chinese culture with us at vybe! Start from the basics of 拼音 or learn how to order your favorite dimsum.",
   "containerOurLanguagesJoinNow": "Join Now"
@@ -60,9 +60,9 @@
   "englishBullet1": "Theme-based topics that change every month",
   "englishBullet2": "Edtech vocabulary and grammar learning",
   "englishBullet3": "Emphasis on spoken English and communication in our classrooms",
-  "englishButton": "GET STARTED. TAKE AN ENGLISH PLACEMENT TEST NOW!",
+  "englishButton": "TAKE AN ENGLISH PLACEMENT TEST NOW!",
 
-  "englishWhyChooseVybe": "Why Choose Vybe?",
+  "englishWhyChooseVybe": "Why Choose vybe?",
   "englishWhyChooseVybeP1": "Learn English through exciting, theme-based classes on relevant topics that appeal to Millenials and Gen Zs – ranging from internet phenomenons to getting drinks at a bar.",
   "englishWhyChooseVybeP2": "No more fixed courses! Book classes according to your own interests and learn basic vocabulary and grammar before coming to class. We adopt EdTech so that students get the best of both worlds in learning a new language.",
   "englishWhyChooseVybeP3": "Our teaching style is active, not passive. We emphasize building confidence in speech and interacting with others through activities. Grammar and vocabulary is important, but not as important as being understood.",
@@ -123,7 +123,7 @@
 
   
 
-  "aboutHeading":"VYBE arose from our desire to create a language learning experience that is both current and engaging.",
+  "aboutHeading":"vybe arose from our desire to create a language learning experience that is both current and engaging.",
   "aboutP1":"At vybe, many of our teachers have lived abroad and understand the difficulties and frustrations of learning a new language.",
   "aboutP2":"Learning a language takes time and patience. It is often easy to give up learning a foreign language when studying starts to get boring and our lives start to get busy.",         
   "aboutP3":"That is why we have curated and designed a curriculum that goes beyond what is covered in textbooks, bringing in topics that are most relevant and engaging in the lives of our students.",
@@ -135,9 +135,9 @@
   "aboutValue1":"Relevance",
   "aboutValue1P":"We strive to constantly evolve and update our curriculum to ensure that our students learn topics that are beyond textbook scenarios.",
   "aboutValue2":"Community",
-  "aboutValue2P":"",
+  "aboutValue2P":"Learning is always more fun in a group. We believe that having friends who share the same passion in learning new languages will motivate and encourage us to never give up.",
   "aboutValue3":"Adventure",
-  "aboutValue3P":"",
+  "aboutValue3P":"Learning a new language is difficult, but it should never be boring. We believe in giving our students opportunities to speak out and learn to express themselves in a new language.",
   "aboutOPQ":"Do our mission and values resonate with you?",
   "aboutOPP":"We are currently looking for like-minded individuals to join the growing vybe team.",
   "aboutOPCTA":"See Our Open Positions"
@@ -156,9 +156,9 @@
   "chineseBullet1": "Theme-based topics that change every month",
   "chineseBullet2": "Edtech vocabulary and grammar learning",
   "chineseBullet3": "Emphasis on spoken Chinese and communication in our classrooms",
-  "chineseButton": "GET STARTED. TAKE A CHINESE PLACEMENT TEST NOW!",
+  "chineseButton": "TAKE A CHINESE PLACEMENT TEST NOW!",
 
-  "chineseWhyChooseVybe": "Why Choose Vybe?",
+  "chineseWhyChooseVybe": "Why Choose vybe?",
   "chineseWhyChooseVybeP1": "Learn Chinese through exciting, theme-based classes on relevant topics that appeal to Millenials and Gen Zs – ranging from internet phenomenons to getting drinks at a bar.",
   "chineseWhyChooseVybeP2": "No more fixed courses! Book classes according to your own interests and learn basic vocabulary and grammar before coming to class. We adopt EdTech so that students get the best of both worlds in learning a new language.",
   "chineseWhyChooseVybeP3": "Our teaching style is active, not passive. We emphasize building confidence in speech and interacting with others through activities. Grammar and vocabulary is important, but not as important as being understood.",
@@ -218,7 +218,7 @@
 
 
 
-  "applicationFormHeader": "Let's Vybe!",
+  "applicationFormHeader": "Let's vybe!",
   "applicationFormTagline": "Whether you’re still exploring or you’re ready to start your journey, you’ve come to the right place.",
   "applicationContactInformation": "Contact Information",
   "applicationFullName": "Full Name",
@@ -234,7 +234,7 @@
   ,
 
 
-  "careersHeader": "Careers at VyBE",
+  "careersHeader": "Careers at vybe",
   "careersP1": "At vybe, we are committed to creating an open and progressive work environment that not only allows our students, but also our staff to thrive and reach their fullest potential.",
   "careersP2": "We give each member of our team the space and room to shine, while also moving the collective group forward.",
   "careersAboutHeading": "About our team",
@@ -261,14 +261,14 @@
   "faqP": "If you have any further questions, please",
   "faqContactUs":"contact us.",
   "faqSection1":"Where",
-  "faqSection1Q1":"Where is Vybe located?",
-  "faqSection1A1":"Vybe’s physical center will be opening soon at Siamscape, a new edumall located just a 2-minute walk from the MBK Center. For now, given the current COVID-19 pandemic, we are operating virtually, offering online classes and activities for all levels.",
+  "faqSection1Q1":"Where is vybe located?",
+  "faqSection1A1":"vybe’s physical center will be opening soon at Siamscape, a new edumall located just a 2-minute walk from the MBK Center. For now, given the current COVID-19 pandemic, we are operating virtually, offering online classes and activities for all levels.",
   "faqSection2":"WHO",
-  "faqSection2Q1":"Who is the target market for Vybe?",
+  "faqSection2Q1":"Who is the target market for Vvbe?",
   "faqSection2A1":"Our curriculum primarily caters to Gen Zs and Millennials from the ages of 16-35. However, we do not discriminate and also welcome students who are younger or older, from all walks of life. ",
   "faqSection3":"WHEN",
-  "faqSection3Q1":"When are Vybe’s opening hours?",
-  "faqSection3A1":"Vybe is open from 10:00 am - 10:00 pm.",
+  "faqSection3Q1":"When are vybe’s opening hours?",
+  "faqSection3A1":"vybe is open from 10:00 am - 10:00 pm.",
   "faqSection4":"WHAT",
   "faqSection4Q1":"What materials do I need to prepare for class?",
   "faqSection4A1":"All of the materials you need are found in our app. Each of our classes include optional grammar and vocabulary practice drills for students to review before class."

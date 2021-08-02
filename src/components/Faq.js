@@ -9,9 +9,9 @@ export default class Faq extends React.Component{
         return <div>
         <Header>
         <ul>
-            <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-            <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-            <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+            <a href="/#our-languages"><li class="languages"><Text tid="navilanguages" /></li></a>
+            <a href="/about-us"><li class=""><Text tid="naviwhoweare" /></li></a>
+            <a href="/"><li class=""><Text tid="naviwhatwedo" /></li></a>
         </ul>
     </Header>
    <div class="container">
@@ -21,7 +21,7 @@ export default class Faq extends React.Component{
                     <div class="six columns">
                         <h1 class="uppercase"><Text tid="faqHeading" /></h1>
                         <br/>
-                        <p><Text tid="faqP" /> <a class="underline-link" href="#contact"><Text tid="faqContactUs" /></a></p>
+                        <p><Text tid="faqP" /> <a class="underline-link" href="mailto:vybe[@]glocal.co.th"><Text tid="faqContactUs" /></a></p>
                     </div>
                 </div>
             </div>

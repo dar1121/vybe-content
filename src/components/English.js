@@ -36,9 +36,9 @@ export default class English extends React.Component{
         return  <div>
         <Header>
                 <ul>
-                    <li class="selected languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-                    <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-                    <li class=""><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                    <a href="/#our-languages"><li class="selected languages"><Text tid="navilanguages" /></li></a>
+                    <a href="/about-us"><li class=""><Text tid="naviwhoweare" /></li></a>
+                    <a href="/"><li class=""><Text tid="naviwhatwedo" /></li></a>
                 </ul>
             </Header>
             <div class="container">
@@ -55,9 +55,9 @@ export default class English extends React.Component{
                 <p class="vertical-margin">
                 <Text tid="englishP" /></p>
                 <ol class="strong">
-                    <li><span><Text tid="englishBullet1" /></span></li>
-                    <li><span><Text tid="englishBullet2" /></span></li>
-                    <li><span><Text tid="englishBullet3" /></span></li>
+                    <li><span class="nopadding"><Text tid="englishBullet1" /></span></li>
+                    <li><span class="nopadding"><Text tid="englishBullet2" /></span></li>
+                    <li><span class="nopadding"><Text tid="englishBullet3" /></span></li>
                 </ol>
                 <button class="language-button uppercase">
                 <Text tid="englishButton" />

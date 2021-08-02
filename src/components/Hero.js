@@ -13,9 +13,9 @@ export default class Applicationform extends React.Component{
         </div>
         <Header>
            <ul>
-               <li class="languages"><a href="/#our-languages"><Text tid="navilanguages" /></a></li>
-               <li class=""><a href="/about-us"><Text tid="naviwhoweare" /></a></li>
-               <li class="selected"><a href="/"><Text tid="naviwhatwedo" /></a></li>  
+                <a href="/#our-languages"><li class="languages"><Text tid="navilanguages" /></li></a>
+                <a href="/about-us"><li class=""><Text tid="naviwhoweare" /></li></a>
+                <a href="/"><li class="selected"><Text tid="naviwhatwedo" /></li></a>
            </ul>
            
        </Header></div>
