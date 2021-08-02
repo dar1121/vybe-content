@@ -1524,7 +1524,7 @@ a {
   box-sizing: border-box; 
 
   color: $black;
-  background-color: $white;
+  background-color: $burntyellow;
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -1533,7 +1533,7 @@ a {
   line-height: 24px;  
 
   z-index:500;
-  border: 1px solid black;
+  
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1546,7 +1546,7 @@ a {
 
 .languageselect:hover {
   cursor: pointer;
-  background-color: $paper;
+  background-color: $teal;
 }
 select::-ms-expand {
   display: none;
