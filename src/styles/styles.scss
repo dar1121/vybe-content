@@ -20,6 +20,7 @@ $border-radius: 4px;
 
 $teal: #57C1B6;
 $burntyellow: #F1BA5D;
+$darkburntyellow: #dbaa55;
 $lightteal: #AAE0E1;
 $cherry: #EC5154;
 $white: #ffffff;
@@ -1522,8 +1523,8 @@ a {
   display: block;
   border-radius: 18px;
   box-sizing: border-box; 
-
-  color: $white;
+  border: 0px;
+  color: $black;
   background-color: $burntyellow;
 
   font-family: 'Montserrat', sans-serif;
@@ -1546,7 +1547,7 @@ a {
 
 .languageselect:hover {
   cursor: pointer;
-  background-color: $cherry;
+  background-color: $darkburntyellow;
 }
 select::-ms-expand {
   display: none; 
